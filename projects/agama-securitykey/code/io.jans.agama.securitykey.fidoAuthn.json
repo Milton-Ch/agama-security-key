@@ -152,8 +152,8 @@
 			"height": 122,
 			"id": "finish-de636519-7305-41a5-89ae-c11536a5c7e1",
 			"position": {
-				"x": 1348,
-				"y": 310
+				"x": 1486,
+				"y": 232
 			},
 			"type": "finish",
 			"data": {
@@ -167,8 +167,8 @@
 					"Agama-when-Node-0a9b8e2a-907c-447a-b594-37a311fc7d2c.SUCCESS"
 				],
 				"position": {
-					"x": 1348,
-					"y": 310
+					"x": 1486,
+					"y": 232
 				},
 				"agamaData": {
 					"id": "finish-de636519-7305-41a5-89ae-c11536a5c7e1",
@@ -220,10 +220,10 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
-				"x": 1348,
-				"y": 310
+				"x": 1486,
+				"y": 232
 			},
 			"dragging": false
 		},
@@ -728,7 +728,7 @@
 				"x": 6,
 				"y": 26
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false
 		}
 	],
@@ -907,8 +907,8 @@
 		}
 	],
 	"viewport": {
-		"x": 10,
-		"y": 15,
+		"x": -1053,
+		"y": 23,
 		"zoom": 1
 	}
 }
