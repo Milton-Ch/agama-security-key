@@ -41,6 +41,9 @@
             "passkey"
         ],
         "noDirectLaunch": [],
-        "configs": {}
+        "configs": {
+            "io.jans.agama.passkey.main": {}
+        },
+        "name": "agama-passkey"
     }
 }
