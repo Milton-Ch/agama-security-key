@@ -3,3 +3,6 @@ Flow org.gluu.agama.passkey.nickname
      Inputs key userData
 inum = userData.inum
 name = userData.name
+nicknameForm = RRF "nickname.ftlh" 
+fidoEnroller = Call org.gluu.agama.passkey.enroll.FidoEnroller#new 
+nickNamed = Call fidoEnroller nameIt nicknameForm.nickname key
