@@ -7,6 +7,11 @@ fidoEnroller = Call org.gluu.agama.passkey.enroll.FidoEnroller#new
 obj = { attestation: "{}", isAttestation: false, showError: false, errorTitle: "", errorMessage: "" }
 Repeat 50 times max
      addDeviceForm = RRF "passkey-add.ftlh" obj
+     When addDeviceForm.skipped is "skipped"
+          obj.isAttestation = false
+          obj.showError = true
+          obj.errorTitle = "Passkey registration failed"
+          obj.errorMessage = addDeviceForm.errorMessage
      When addDeviceForm.addPasskeyBtn is ""
           detestable = Call fidoEnroller getAttestationMessage inum
           obj.isAttestation = true
