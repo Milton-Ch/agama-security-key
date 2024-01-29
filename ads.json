@@ -42,7 +42,8 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "org.gluu.agama.passkey.main": {}
+            "org.gluu.agama.passkey.main": {},
+            "org.gluu.agama.passkey.list": {}
         },
         "name": "agama-passkey"
     }
