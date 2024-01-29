@@ -1,2 +1,8 @@
-Flow org.gluu.agama.passkey.add
+Flow org.gluu.agama.passkey.nickname
      Basepath ""
+     Inputs userData
+inum = userData.inum
+name = userData.name
+fidoEnroller = Call org.gluu.agama.passkey.enroll.FidoEnroller#new 
+obj = { attestation: "{}", isAttestation: false, showError: false, errorTitle: "", errorMessage: "" }
+Repeat 50 times max
