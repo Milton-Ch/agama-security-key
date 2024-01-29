@@ -3,6 +3,56 @@
 		{
 			"width": 170,
 			"height": 124,
+			"id": "Agama-assignment-Node-74fba559-7aaf-415d-a7b6-dcde2be6f6c4",
+			"position": {
+				"x": 230,
+				"y": 30
+			},
+			"type": "assignment",
+			"data": {
+				"id": "Agama-assignment-Node-74fba559-7aaf-415d-a7b6-dcde2be6f6c4",
+				"type": "Agama-assignment-Node",
+				"parentId": "Agama-start-Flow-6c1c7061-0c95-4167-b910-dfaba3878818",
+				"whenCondition": "",
+				"inRepeatBlock": false,
+				"position": {
+					"x": 230,
+					"y": 30
+				},
+				"agamaData": {
+					"id": "Agama-assignment-Node-74fba559-7aaf-415d-a7b6-dcde2be6f6c4",
+					"parentId": "Agama-start-Flow-6c1c7061-0c95-4167-b910-dfaba3878818",
+					"type": "Agama-assignment-Node",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "",
+					"whenCondition": "",
+					"inRepeatBlock": false,
+					"assignments": [
+						{
+							"variableTypeCheck": false,
+							"assignmentExpression": "userData.inum",
+							"assignedVariableName": "inum"
+						},
+						{
+							"variableTypeCheck": false,
+							"assignmentExpression": "userData.name",
+							"assignedVariableName": "name"
+						}
+					],
+					"nodeIcon": "material-symbols:equal"
+				}
+			},
+			"selected": true,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 230,
+				"y": 30
+			}
+		},
+		{
+			"width": 168,
+			"height": 120,
 			"id": "Agama-start-Flow-6c1c7061-0c95-4167-b910-dfaba3878818",
 			"type": "start",
 			"sourcePosition": "right",
@@ -25,11 +75,11 @@
 					"configParams": "{}",
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
-					"inputs": "",
+					"inputs": "key userData",
 					"configs": "",
 					"flowname": "org.gluu.agama.passkey.nickname"
 				},
-				"skake": false
+				"skake": true
 			},
 			"position": {
 				"x": 30,
@@ -38,13 +88,33 @@
 			"positionAbsolute": {
 				"x": 30,
 				"y": 30
+			},
+			"selected": false,
+			"dragging": false
+		}
+	],
+	"edges": [
+		{
+			"id": "Agama-start-Flow-6c1c7061-0c95-4167-b910-dfaba3878818-Agama-assignment-Node-74fba559-7aaf-415d-a7b6-dcde2be6f6c4-b8c57c37-1ed1-46e2-9536-9fc91c2e77c5",
+			"type": "straight",
+			"source": "Agama-start-Flow-6c1c7061-0c95-4167-b910-dfaba3878818",
+			"target": "Agama-assignment-Node-74fba559-7aaf-415d-a7b6-dcde2be6f6c4",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
 			}
 		}
 	],
-	"edges": [],
 	"viewport": {
-		"x": 10,
-		"y": 15,
+		"x": 48,
+		"y": 114,
 		"zoom": 1
 	}
 }
