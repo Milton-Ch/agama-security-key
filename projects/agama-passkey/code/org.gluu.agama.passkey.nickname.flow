@@ -1,2 +1,5 @@
 Flow org.gluu.agama.passkey.nickname
      Basepath ""
+     Inputs key userData
+inum = userData.inum
+name = userData.name
