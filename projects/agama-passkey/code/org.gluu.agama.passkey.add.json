@@ -3,6 +3,48 @@
 		{
 			"width": 170,
 			"height": 124,
+			"id": "Agama-rrf-Node-ae26dbde-6160-4efd-b78b-580f9e92c847",
+			"position": {
+				"x": 992,
+				"y": 264
+			},
+			"type": "rrf",
+			"data": {
+				"id": "Agama-rrf-Node-ae26dbde-6160-4efd-b78b-580f9e92c847",
+				"type": "Agama-rrf-Node",
+				"parentId": "Agama-repeat-Node-671e5a55-a960-43e8-8ddb-8b4e7fbd704f",
+				"whenCondition": "",
+				"inRepeatBlock": true,
+				"position": {
+					"x": 992,
+					"y": 264
+				},
+				"agamaData": {
+					"id": "Agama-rrf-Node-ae26dbde-6160-4efd-b78b-580f9e92c847",
+					"parentId": "Agama-repeat-Node-671e5a55-a960-43e8-8ddb-8b4e7fbd704f",
+					"type": "Agama-rrf-Node",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "",
+					"whenCondition": "",
+					"inRepeatBlock": true,
+					"assignments": [],
+					"nodeIcon": "ph:globe-simple",
+					"templatePath": "passkey-add.ftlh",
+					"asssignedVariableName": "addDeviceForm",
+					"arguments": "obj"
+				}
+			},
+			"selected": true,
+			"positionAbsolute": {
+				"x": 992,
+				"y": 264
+			},
+			"dragging": false
+		},
+		{
+			"width": 170,
+			"height": 124,
 			"id": "Agama-repeat-Node-671e5a55-a960-43e8-8ddb-8b4e7fbd704f",
 			"position": {
 				"x": 837,
@@ -34,7 +76,7 @@
 				},
 				"skake": true
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 837,
 				"y": 27
@@ -295,6 +337,24 @@
 				"color": "#fff",
 				"fillOpacity": 0.7
 			}
+		},
+		{
+			"id": "Agama-repeat-Node-671e5a55-a960-43e8-8ddb-8b4e7fbd704f-Agama-rrf-Node-ae26dbde-6160-4efd-b78b-580f9e92c847-f87cddca-6356-4d9d-ad96-4a91f5d06e72",
+			"type": "straight",
+			"source": "Agama-repeat-Node-671e5a55-a960-43e8-8ddb-8b4e7fbd704f",
+			"target": "Agama-rrf-Node-ae26dbde-6160-4efd-b78b-580f9e92c847",
+			"label": "In Block",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			},
+			"sourceHandle": "Agama-repeat-Node-671e5a55-a960-43e8-8ddb-8b4e7fbd704f.InRepeatBlock"
 		}
 	],
 	"viewport": {
