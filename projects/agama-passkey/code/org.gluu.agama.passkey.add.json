@@ -6,7 +6,7 @@
 			"id": "finish-aa9b5b7b-1306-4e1b-ac11-bc113973efcc",
 			"position": {
 				"x": 3147.929153619497,
-				"y": 551.3813347221254
+				"y": 550.0203304705267
 			},
 			"type": "finish",
 			"data": {
@@ -18,7 +18,7 @@
 				"handles": [],
 				"position": {
 					"x": 3147.929153619497,
-					"y": 551.3813347221254
+					"y": 550.0203304705267
 				},
 				"agamaData": {
 					"id": "finish-aa9b5b7b-1306-4e1b-ac11-bc113973efcc",
@@ -39,7 +39,7 @@
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 3147.929153619497,
-				"y": 551.3813347221254
+				"y": 550.0203304705267
 			}
 		},
 		{
@@ -93,7 +93,7 @@
 			"height": 124,
 			"id": "Agama-trigger-Node-eec22f1d-a92f-4cab-88a0-c202a9fc6445",
 			"position": {
-				"x": 2747.929153619497,
+				"x": 2732.929153619497,
 				"y": 551.3813347221254
 			},
 			"type": "trigger",
@@ -118,7 +118,7 @@
 					"inRepeatBlock": true,
 					"nodeIcon": "fluent-mdl2:trigger-approval",
 					"flowFileName": "org.gluu.agama.passkey.nickname",
-					"arguments": "userData",
+					"arguments": "key userData",
 					"asssignedVariableName": "nicknameTrigger",
 					"exceptionVariableField": ""
 				},
@@ -126,7 +126,7 @@
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 2747.929153619497,
+				"x": 2732.929153619497,
 				"y": 551.3813347221254
 			},
 			"dragging": false
@@ -347,7 +347,7 @@
 			"id": "Agama-assignment-Node-0736a836-5e6e-467a-a039-1b78c39b2191",
 			"position": {
 				"x": 3256.135588177542,
-				"y": 284.3486237642484
+				"y": 282.98761951264976
 			},
 			"type": "assignment",
 			"data": {
@@ -358,7 +358,7 @@
 				"inRepeatBlock": true,
 				"position": {
 					"x": 3256.135588177542,
-					"y": 284.3486237642484
+					"y": 282.98761951264976
 				},
 				"agamaData": {
 					"id": "Agama-assignment-Node-0736a836-5e6e-467a-a039-1b78c39b2191",
@@ -398,7 +398,7 @@
 			"selected": false,
 			"positionAbsolute": {
 				"x": 3256.135588177542,
-				"y": 284.3486237642484
+				"y": 282.98761951264976
 			},
 			"dragging": false
 		},
@@ -1081,7 +1081,7 @@
 				],
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 2921.3596598374193,
 				"y": 337.55318742631744
@@ -1541,8 +1541,8 @@
 		}
 	],
 	"viewport": {
-		"x": -772.035815272325,
-		"y": 92.93450296770982,
+		"x": -1687.0358152723243,
+		"y": -74.0654970322903,
 		"zoom": 0.7347515621831294
 	}
 }
