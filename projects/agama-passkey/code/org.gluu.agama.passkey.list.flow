@@ -1,6 +1,0 @@
-Flow __________
-     Basepath ""
-     Inputs userData scimSetting
-inum = userData.inum
-uid = userData.uid
-fidoValidator = Call org.gluu.agama.passkey.authn.FidoValidator#new 
