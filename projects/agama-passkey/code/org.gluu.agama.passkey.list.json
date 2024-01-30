@@ -1,36 +1,52 @@
-[
-  {
-    "id": "Agama-start-Flow-93ffac5b-aaa9-472e-a1c9-783c54a54b32",
-    "type": "start",
-    "sourcePosition": "right",
-    "data": {
-      "id": "Agama-start-Flow-93ffac5b-aaa9-472e-a1c9-783c54a54b32",
-      "type": "Agama-start-Flow",
-      "position": {
-        "x": 30,
-        "y": 30
-      },
-      "inRepeatBlock": false,
-      "agamaData": {
-        "id": "Agama-start-Flow-93ffac5b-aaa9-472e-a1c9-783c54a54b32",
-        "type": "Agama-start-Flow",
-        "displayName": "Passkey List",
-        "hasComment": true,
-        "comment": "",
-        "isTopLevelFlow": true,
-        "basepath": "",
-        "configParams": "{}",
-        "nodeIcon": "material-symbols:line-start-square",
-        "timeout": "",
-        "inputs": "",
-        "configs": "",
-        "flowname": "org.gluu.agama.passkey.list"
-      },
-      "skake": false
-    },
-    "position": {
-      "x": 30,
-      "y": 30
-    }
-  }
-]
+{
+	"nodes": [
+		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-start-Flow-93ffac5b-aaa9-472e-a1c9-783c54a54b32",
+			"type": "start",
+			"sourcePosition": "right",
+			"data": {
+				"id": "Agama-start-Flow-93ffac5b-aaa9-472e-a1c9-783c54a54b32",
+				"type": "Agama-start-Flow",
+				"position": {
+					"x": 29,
+					"y": 31
+				},
+				"inRepeatBlock": false,
+				"agamaData": {
+					"id": "Agama-start-Flow-93ffac5b-aaa9-472e-a1c9-783c54a54b32",
+					"type": "Agama-start-Flow",
+					"displayName": "Passkey List",
+					"hasComment": true,
+					"comment": "",
+					"isTopLevelFlow": true,
+					"basepath": "",
+					"configParams": "{}",
+					"nodeIcon": "material-symbols:line-start-square",
+					"timeout": "",
+					"inputs": "",
+					"configs": "",
+					"flowname": "org.gluu.agama.passkey.list"
+				},
+				"skake": false
+			},
+			"position": {
+				"x": 29,
+				"y": 31
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 29,
+				"y": 31
+			}
+		}
+	],
+	"edges": [],
+	"viewport": {
+		"x": 702,
+		"y": 38,
+		"zoom": 1
+	}
+}
