@@ -29,12 +29,13 @@
 					"hasComment": true,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "",
-					"nodeIcon": "material-symbols:line-end-square-rounded"
+					"returnVariable": "{ userId: inum, property1: \"value1\"}",
+					"nodeIcon": "material-symbols:line-end-square-rounded",
+					"finishMode": "withSuccess"
 				},
-				"skake": false
+				"skake": true
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 3147.929153619497,
@@ -571,9 +572,9 @@
 					"hasComment": true,
 					"hasNoRepeat": true
 				},
-				"skake": true
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 836.4714909797192,
 				"y": 27
@@ -1540,8 +1541,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1200.3741086920302,
-		"y": 70.51561746867554,
-		"zoom": 1.8921152934511938
+		"x": -5145.086921818402,
+		"y": -832.2220550141808,
+		"zoom": 1.892115293451193
 	}
 }
