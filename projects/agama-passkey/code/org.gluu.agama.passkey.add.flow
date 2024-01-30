@@ -22,8 +22,7 @@ Repeat 50 times max
           When E is null and key is not null
                nicknameTrigger = Trigger org.gluu.agama.passkey.nickname key userData
                obj.isAttestation = false
-               it_mimzv = {success:true, data: { userId: inum, property1: "value1"}}
-               Finish it_mimzv
+               Finish nicknameTrigger
           When E is not null
                obj.isAttestation = false
                obj.showError = true
