@@ -20,17 +20,17 @@ Repeat 50 times max
      When addDeviceForm.tokenResponse is not ""
           key | E = Call fidoEnroller verifyRegistration inum addDeviceForm.tokenResponse
           When E is null and key is not null
-               nicknameTrigger = Trigger org.gluu.agama.passkey.nickname userData
+               nicknameTrigger = Trigger org.gluu.agama.passkey.nickname key userData
                obj.isAttestation = false
-               it_jfioe = {success:true, data: { userId: inum, property1: "value1"}}
-               Finish it_jfioe
+               it_mimzv = {success:true, data: { userId: inum, property1: "value1"}}
+               Finish it_mimzv
           When E is not null
                obj.isAttestation = false
                obj.showError = true
                obj.errorTitle = "Passkey registration failed."
                obj.errorMessage = E.message
      When addDeviceForm.cancelBtn is ""
-          it_lclxb = {success:false, error: "Cancel event"}
-          Finish it_lclxb
-it_xjyct = {success:false, error: "Passkey registration attempt exceeded."}
-Finish it_xjyct
+          it_gzzfp = {success:false, error: "Cancel event"}
+          Finish it_gzzfp
+it_dmkqv = {success:false, error: "Passkey registration attempt exceeded."}
+Finish it_dmkqv
