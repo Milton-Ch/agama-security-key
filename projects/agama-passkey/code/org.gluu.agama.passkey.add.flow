@@ -7,3 +7,13 @@ fidoEnroller = Call org.gluu.agama.passkey.enroll.FidoEnroller#new
 obj = { attestation: "{}", isAttestation: false, showError: false, errorTitle: "", errorMessage: "" }
 Repeat 50 times max
      addDeviceForm = RRF "passkey-add.ftlh" obj
+     When addDeviceForm.tokenResponse is not ""
+          key | E = Call fidoEnroller verifyRegistration inum addDeviceForm.tokenResponse
+          When E is not null
+               obj.isAttestation = false
+               obj.showError = true
+               obj.errorTitle = "Passkey registration failed."
+               obj.errorMessage = E.message
+     When addDeviceForm.cancelBtn is ""
+          it_ozabh = {success:false, error: "Cancel event"}
+          Finish it_ozabh
