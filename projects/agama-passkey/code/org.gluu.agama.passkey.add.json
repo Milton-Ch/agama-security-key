@@ -123,7 +123,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 2747.929153619497,
 				"y": 551.3813347221254
@@ -543,7 +543,7 @@
 			"height": 124,
 			"id": "Agama-repeat-Node-671e5a55-a960-43e8-8ddb-8b4e7fbd704f",
 			"position": {
-				"x": 837,
+				"x": 836.4714909797192,
 				"y": 27
 			},
 			"type": "repeat",
@@ -558,7 +558,7 @@
 					"Agama-repeat-Node-671e5a55-a960-43e8-8ddb-8b4e7fbd704f.InRepeatBlock"
 				],
 				"position": {
-					"x": 837,
+					"x": 836.4714909797192,
 					"y": 27
 				},
 				"agamaData": {
@@ -567,15 +567,15 @@
 					"type": "Agama-repeat-Node",
 					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
 					"maxIteration": "50",
-					"maxIterationVariableName": "50",
+					"maxIterationVariableName": "",
 					"hasComment": true,
 					"hasNoRepeat": true
 				},
 				"skake": true
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
-				"x": 837,
+				"x": 836.4714909797192,
 				"y": 27
 			},
 			"dragging": false
@@ -1540,8 +1540,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2504.8627299632412,
-		"y": -231.202591321451,
-		"zoom": 1
+		"x": -1200.3741086920302,
+		"y": 70.51561746867554,
+		"zoom": 1.8921152934511938
 	}
 }
