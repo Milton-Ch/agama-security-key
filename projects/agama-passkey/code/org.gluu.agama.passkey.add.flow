@@ -5,7 +5,7 @@ inum = userData.inum
 name = userData.name
 fidoEnroller = Call org.gluu.agama.passkey.enroll.FidoEnroller#new 
 obj = { attestation: "{}", isAttestation: false, showError: false, errorTitle: "", errorMessage: "" }
-Repeat 50 times max
+50 = Repeat 50 times max
      addDeviceForm = RRF "passkey-add.ftlh" obj
      When addDeviceForm.addPasskeyBtn is ""
           detestable = Call fidoEnroller getAttestationMessage inum
@@ -20,7 +20,7 @@ Repeat 50 times max
      When addDeviceForm.tokenResponse is not ""
           key | E = Call fidoEnroller verifyRegistration inum addDeviceForm.tokenResponse
           When E is null and key is not null
-               nicknameTrigger = Trigger org.gluu.agama.passkey.nickname inum
+               nicknameTrigger = Trigger org.gluu.agama.passkey.nickname userData
                obj.isAttestation = false
                Finish __________
           When E is not null
@@ -29,7 +29,7 @@ Repeat 50 times max
                obj.errorTitle = "Passkey registration failed."
                obj.errorMessage = E.message
      When addDeviceForm.cancelBtn is ""
-          it_hnqos = {success:false, error: "Cancel event"}
-          Finish it_hnqos
-it_xkqvk = {success:false, error: "Passkey registration attempt exceeded."}
-Finish it_xkqvk
+          it_qtjob = {success:false, error: "Cancel event"}
+          Finish it_qtjob
+it_zixum = {success:false, error: "Passkey registration attempt exceeded."}
+Finish it_zixum
