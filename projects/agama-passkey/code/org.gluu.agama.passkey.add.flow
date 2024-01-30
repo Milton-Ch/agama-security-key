@@ -25,5 +25,7 @@ Repeat 50 times max
                obj.errorTitle = "Passkey registration failed."
                obj.errorMessage = E.message
      When addDeviceForm.cancelBtn is ""
-          it_ozykd = {success:false, error: "Cancel event"}
-          Finish it_ozykd
+          it_vagaf = {success:false, error: "Cancel event"}
+          Finish it_vagaf
+it_tfwlq = {success:false, error: "Passkey registration attempt exceeded."}
+Finish it_tfwlq
