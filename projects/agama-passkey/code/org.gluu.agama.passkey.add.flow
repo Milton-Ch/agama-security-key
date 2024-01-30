@@ -29,7 +29,7 @@ obj = { attestation: "{}", isAttestation: false, showError: false, errorTitle: "
                obj.errorTitle = "Passkey registration failed."
                obj.errorMessage = E.message
      When addDeviceForm.cancelBtn is ""
-          it_qtjob = {success:false, error: "Cancel event"}
-          Finish it_qtjob
-it_zixum = {success:false, error: "Passkey registration attempt exceeded."}
-Finish it_zixum
+          it_yqfzn = {success:false, error: "Cancel event"}
+          Finish it_yqfzn
+it_ykeip = {success:false, error: "Passkey registration attempt exceeded."}
+Finish it_ykeip
