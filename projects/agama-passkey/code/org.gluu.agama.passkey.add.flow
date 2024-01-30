@@ -8,7 +8,7 @@ obj = { attestation: "{}", isAttestation: false, showError: false, errorTitle: "
 Repeat 50 times max
      addDeviceForm = RRF "passkey-add.ftlh" obj
      When addDeviceForm.cancelBtn is ""
-          it_phqgs = {success:false, error: "Cancel event"}
-          Finish it_phqgs
+          it_pqvcq = {success:false, error: "Cancel event"}
+          Finish it_pqvcq
 When addDeviceForm.tokenResponse is not ""
      key | E = Call fidoEnroller verifyRegistration inum addDeviceForm.tokenResponse
