@@ -571,7 +571,7 @@
 					"hasComment": true,
 					"hasNoRepeat": true
 				},
-				"skake": false
+				"skake": true
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -1540,8 +1540,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2559.8627299632412,
-		"y": -256.202591321451,
+		"x": -2504.8627299632412,
+		"y": -231.202591321451,
 		"zoom": 1
 	}
 }
