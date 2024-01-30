@@ -3,6 +3,54 @@
 		{
 			"width": 170,
 			"height": 124,
+			"id": "Agama-call-Node-97e742a1-d368-499f-9218-da5ffa4bf462",
+			"position": {
+				"x": 2331.8375004131094,
+				"y": 579.9750911942592
+			},
+			"type": "call",
+			"data": {
+				"id": "Agama-call-Node-97e742a1-d368-499f-9218-da5ffa4bf462",
+				"type": "Agama-call-Node",
+				"parentId": "Agama-when-Node-5955b8ab-0e7e-4a9f-bc7e-d9e9a425d02e",
+				"whenCondition": "WhenTrue",
+				"inRepeatBlock": "",
+				"position": {
+					"x": 2331.8375004131094,
+					"y": 579.9750911942592
+				},
+				"agamaData": {
+					"id": "Agama-call-Node-97e742a1-d368-499f-9218-da5ffa4bf462",
+					"parentId": "Agama-when-Node-5955b8ab-0e7e-4a9f-bc7e-d9e9a425d02e",
+					"type": "Agama-call-Node",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "",
+					"javaClassName": "",
+					"javaMethodName": "verifyRegistration",
+					"javaVariableName": "fidoEnroller",
+					"exceptionVariableField": "E",
+					"callType": "Call method on instance",
+					"whenCondition": "WhenTrue",
+					"inRepeatBlock": "",
+					"arguments": [
+						"inum",
+						"addDeviceForm.tokenResponse"
+					],
+					"nodeIcon": "material-symbols:code",
+					"asssignedVariableName": "key"
+				}
+			},
+			"selected": true,
+			"positionAbsolute": {
+				"x": 2331.8375004131094,
+				"y": 579.9750911942592
+			},
+			"dragging": false
+		},
+		{
+			"width": 170,
+			"height": 124,
 			"id": "Agama-assignment-Node-a0b1a5b9-45c4-417b-8669-f19fc558969c",
 			"position": {
 				"x": 1874.765477669458,
@@ -51,7 +99,8 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -161,67 +210,6 @@
 			"positionAbsolute": {
 				"x": 1402.3926638462422,
 				"y": 576.9650168449692
-			},
-			"dragging": false
-		},
-		{
-			"width": 170,
-			"height": 124,
-			"id": "Agama-assignment-Node-ec8f3d75-2e28-42e8-8919-fbbbc0e3ab0e",
-			"position": {
-				"x": 2333.149788062258,
-				"y": 580.6303658815108
-			},
-			"type": "assignment",
-			"data": {
-				"id": "Agama-assignment-Node-ec8f3d75-2e28-42e8-8919-fbbbc0e3ab0e",
-				"type": "Agama-assignment-Node",
-				"parentId": "Agama-when-Node-5955b8ab-0e7e-4a9f-bc7e-d9e9a425d02e",
-				"whenCondition": "WhenTrue",
-				"inRepeatBlock": true,
-				"position": {
-					"x": 2333.149788062258,
-					"y": 580.6303658815108
-				},
-				"agamaData": {
-					"id": "Agama-assignment-Node-ec8f3d75-2e28-42e8-8919-fbbbc0e3ab0e",
-					"parentId": "Agama-when-Node-5955b8ab-0e7e-4a9f-bc7e-d9e9a425d02e",
-					"type": "Agama-assignment-Node",
-					"displayName": "",
-					"hasComment": true,
-					"comment": "",
-					"whenCondition": "WhenTrue",
-					"inRepeatBlock": true,
-					"assignments": [
-						{
-							"variableTypeCheck": false,
-							"assignmentExpression": "false",
-							"assignedVariableName": "obj.isAttestation"
-						},
-						{
-							"variableTypeCheck": false,
-							"assignmentExpression": "true",
-							"assignedVariableName": "obj.showError"
-						},
-						{
-							"variableTypeCheck": true,
-							"assignmentExpression": "Passkey registration failed",
-							"assignedVariableName": "obj.errorTitle"
-						},
-						{
-							"variableTypeCheck": false,
-							"assignmentExpression": "addDeviceForm.errorMessage",
-							"assignedVariableName": "obj.errorMessage"
-						}
-					],
-					"nodeIcon": "material-symbols:equal"
-				},
-				"skake": false
-			},
-			"selected": false,
-			"positionAbsolute": {
-				"x": 2333.149788062258,
-				"y": 580.6303658815108
 			},
 			"dragging": false
 		},
@@ -670,7 +658,7 @@
 					"id": "Agama-when-Node-5955b8ab-0e7e-4a9f-bc7e-d9e9a425d02e",
 					"parentId": "Agama-rrf-Node-ae26dbde-6160-4efd-b78b-580f9e92c847",
 					"type": "Agama-when-Node",
-					"hasFailure": true,
+					"hasFailure": "",
 					"conditions": [
 						{
 							"variable": "addDeviceForm.tokenResponse",
@@ -680,7 +668,10 @@
 						}
 					],
 					"hasComment": true,
-					"inRepeatBlock": ""
+					"inRepeatBlock": "",
+					"hasSuccess": true,
+					"hasNoRepeat": false,
+					"hasRepeat": false
 				},
 				"handles": [
 					"Agama-when-Node-5955b8ab-0e7e-4a9f-bc7e-d9e9a425d02e.FAILURE",
@@ -945,24 +936,6 @@
 			"selected": false
 		},
 		{
-			"id": "Agama-when-Node-5955b8ab-0e7e-4a9f-bc7e-d9e9a425d02e-Agama-assignment-Node-ec8f3d75-2e28-42e8-8919-fbbbc0e3ab0e-34349889-d791-46d9-a7a6-3db6162859b6",
-			"type": "straight",
-			"source": "Agama-when-Node-5955b8ab-0e7e-4a9f-bc7e-d9e9a425d02e",
-			"target": "Agama-assignment-Node-ec8f3d75-2e28-42e8-8919-fbbbc0e3ab0e",
-			"label": "Condition met",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"labelBgStyle": {
-				"fill": "#FFCC00",
-				"color": "#fff",
-				"fillOpacity": 0.7
-			},
-			"sourceHandle": "Agama-when-Node-5955b8ab-0e7e-4a9f-bc7e-d9e9a425d02e.SUCCESS"
-		},
-		{
 			"id": "Agama-when-Node-02e66a15-35d7-47a8-b7c1-a8448aa4ae8e-Agama-when-Node-5955b8ab-0e7e-4a9f-bc7e-d9e9a425d02e-d3392bd5-511f-4145-bfd2-0affda4e9a3a",
 			"type": "straight",
 			"source": "Agama-when-Node-02e66a15-35d7-47a8-b7c1-a8448aa4ae8e",
@@ -1067,11 +1040,29 @@
 				"fillOpacity": 0.7
 			},
 			"sourceHandle": "Agama-when-Node-02e66a15-35d7-47a8-b7c1-a8448aa4ae8e.SUCCESS"
+		},
+		{
+			"id": "Agama-when-Node-5955b8ab-0e7e-4a9f-bc7e-d9e9a425d02e-Agama-call-Node-97e742a1-d368-499f-9218-da5ffa4bf462-74ab1804-9b48-4e99-b889-1093f5123a03",
+			"type": "straight",
+			"source": "Agama-when-Node-5955b8ab-0e7e-4a9f-bc7e-d9e9a425d02e",
+			"target": "Agama-call-Node-97e742a1-d368-499f-9218-da5ffa4bf462",
+			"label": "Condition met",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			},
+			"sourceHandle": "Agama-when-Node-5955b8ab-0e7e-4a9f-bc7e-d9e9a425d02e.SUCCESS"
 		}
 	],
 	"viewport": {
 		"x": -953.3607036540889,
-		"y": -118.08361505228265,
+		"y": -120.08361505228265,
 		"zoom": 0.7169776240079136
 	}
 }
