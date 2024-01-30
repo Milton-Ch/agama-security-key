@@ -13,7 +13,4 @@ Repeat 50 times max
           obj.attestation = destable
           obj.showError = false
 When addDeviceForm.tokenResponse is not ""
-     obj.isAttestation = false
-     obj.showError = true
-     obj.errorTitle = "Passkey registration failed"
-     obj.errorMessage = addDeviceForm.errorMessage
+     key | E = Call fidoEnroller verifyRegistration inum addDeviceForm.tokenResponse
