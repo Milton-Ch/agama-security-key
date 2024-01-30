@@ -29,7 +29,7 @@
 					"hasComment": true,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "{ userId: inum, property1: \"value1\"}",
+					"returnVariable": "{ userId: inum, response: nicknameTrigger }",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"finishMode": "withSuccess"
 				},
@@ -1541,8 +1541,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1687.0358152723243,
-		"y": -74.0654970322903,
-		"zoom": 0.7347515621831294
+		"x": -2652,
+		"y": -165,
+		"zoom": 1
 	}
 }
