@@ -31,9 +31,10 @@
 					"flowfilename": "",
 					"returnVariable": "",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 3147.929153619497,
@@ -76,7 +77,8 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -115,15 +117,13 @@
 					"inRepeatBlock": true,
 					"nodeIcon": "fluent-mdl2:trigger-approval",
 					"flowFileName": "org.gluu.agama.passkey.nickname",
-					"arguments": [
-						"inum"
-					],
+					"arguments": "userData",
 					"asssignedVariableName": "nicknameTrigger",
 					"exceptionVariableField": ""
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 2747.929153619497,
 				"y": 551.3813347221254
@@ -1540,8 +1540,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1564.86482640207,
-		"y": -57.26176194938921,
-		"zoom": 0.7169776240079136
+		"x": -2559.8627299632412,
+		"y": -256.202591321451,
+		"zoom": 1
 	}
 }
