@@ -3,6 +3,146 @@
 		{
 			"width": 170,
 			"height": 124,
+			"id": "Agama-call-Node-0d001f9c-34e2-43c1-a75c-260734e65c44",
+			"position": {
+				"x": 629,
+				"y": 31
+			},
+			"type": "call",
+			"data": {
+				"id": "Agama-call-Node-0d001f9c-34e2-43c1-a75c-260734e65c44",
+				"type": "Agama-call-Node",
+				"parentId": "Agama-call-Node-b9aa2445-9141-4b46-b6a1-e4a296842028",
+				"whenCondition": "",
+				"inRepeatBlock": false,
+				"position": {
+					"x": 629,
+					"y": 31
+				},
+				"agamaData": {
+					"id": "Agama-call-Node-0d001f9c-34e2-43c1-a75c-260734e65c44",
+					"parentId": "Agama-call-Node-b9aa2445-9141-4b46-b6a1-e4a296842028",
+					"type": "Agama-call-Node",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "",
+					"javaClassName": "org.gluu.agama.passkey.ScimFido2Helper",
+					"javaMethodName": "",
+					"javaVariableName": "",
+					"exceptionVariableField": "",
+					"callType": "Create an instance",
+					"whenCondition": "",
+					"inRepeatBlock": false,
+					"arguments": "scimSetting",
+					"nodeIcon": "material-symbols:code",
+					"asssignedVariableName": "scimFido2Helper"
+				}
+			},
+			"selected": true,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 629,
+				"y": 31
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-call-Node-b9aa2445-9141-4b46-b6a1-e4a296842028",
+			"position": {
+				"x": 429,
+				"y": 31
+			},
+			"type": "call",
+			"data": {
+				"id": "Agama-call-Node-b9aa2445-9141-4b46-b6a1-e4a296842028",
+				"type": "Agama-call-Node",
+				"parentId": "Agama-assignment-Node-7f9fc2f6-5137-4bb3-acee-421851b701e2",
+				"whenCondition": "",
+				"inRepeatBlock": false,
+				"position": {
+					"x": 429,
+					"y": 31
+				},
+				"agamaData": {
+					"id": "Agama-call-Node-b9aa2445-9141-4b46-b6a1-e4a296842028",
+					"parentId": "Agama-assignment-Node-7f9fc2f6-5137-4bb3-acee-421851b701e2",
+					"type": "Agama-call-Node",
+					"displayName": "New instance FidoValidator",
+					"hasComment": true,
+					"comment": "",
+					"javaClassName": "org.gluu.agama.passkey.authn.FidoValidator",
+					"javaMethodName": "",
+					"javaVariableName": "",
+					"exceptionVariableField": "",
+					"callType": "Create an instance",
+					"whenCondition": "",
+					"inRepeatBlock": false,
+					"arguments": [],
+					"nodeIcon": "material-symbols:code",
+					"asssignedVariableName": "fidoValidator"
+				}
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 429,
+				"y": 31
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-assignment-Node-7f9fc2f6-5137-4bb3-acee-421851b701e2",
+			"position": {
+				"x": 229,
+				"y": 31
+			},
+			"type": "assignment",
+			"data": {
+				"id": "Agama-assignment-Node-7f9fc2f6-5137-4bb3-acee-421851b701e2",
+				"type": "Agama-assignment-Node",
+				"parentId": "Agama-start-Flow-93ffac5b-aaa9-472e-a1c9-783c54a54b32",
+				"whenCondition": "",
+				"inRepeatBlock": false,
+				"position": {
+					"x": 229,
+					"y": 31
+				},
+				"agamaData": {
+					"id": "Agama-assignment-Node-7f9fc2f6-5137-4bb3-acee-421851b701e2",
+					"parentId": "Agama-start-Flow-93ffac5b-aaa9-472e-a1c9-783c54a54b32",
+					"type": "Agama-assignment-Node",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "",
+					"whenCondition": "",
+					"inRepeatBlock": false,
+					"assignments": [
+						{
+							"variableTypeCheck": false,
+							"assignmentExpression": "userData.inum",
+							"assignedVariableName": "inum"
+						},
+						{
+							"variableTypeCheck": false,
+							"assignmentExpression": "userData.inum",
+							"assignedVariableName": "uid"
+						}
+					],
+					"nodeIcon": "material-symbols:equal"
+				}
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 229,
+				"y": 31
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
 			"id": "Agama-start-Flow-93ffac5b-aaa9-472e-a1c9-783c54a54b32",
 			"type": "start",
 			"sourcePosition": "right",
@@ -25,7 +165,7 @@
 					"configParams": "{}",
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
-					"inputs": "",
+					"inputs": "userData scimSetting",
 					"configs": "",
 					"flowname": "org.gluu.agama.passkey.list"
 				},
@@ -43,10 +183,62 @@
 			}
 		}
 	],
-	"edges": [],
+	"edges": [
+		{
+			"id": "Agama-start-Flow-93ffac5b-aaa9-472e-a1c9-783c54a54b32-Agama-assignment-Node-7f9fc2f6-5137-4bb3-acee-421851b701e2-d557d6c0-80de-45b7-9ef3-3bb611008e82",
+			"type": "straight",
+			"source": "Agama-start-Flow-93ffac5b-aaa9-472e-a1c9-783c54a54b32",
+			"target": "Agama-assignment-Node-7f9fc2f6-5137-4bb3-acee-421851b701e2",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			}
+		},
+		{
+			"id": "Agama-assignment-Node-7f9fc2f6-5137-4bb3-acee-421851b701e2-Agama-call-Node-b9aa2445-9141-4b46-b6a1-e4a296842028-39681149-cb24-459c-9b4d-642a16fd2533",
+			"type": "straight",
+			"source": "Agama-assignment-Node-7f9fc2f6-5137-4bb3-acee-421851b701e2",
+			"target": "Agama-call-Node-b9aa2445-9141-4b46-b6a1-e4a296842028",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			}
+		},
+		{
+			"id": "Agama-call-Node-b9aa2445-9141-4b46-b6a1-e4a296842028-Agama-call-Node-0d001f9c-34e2-43c1-a75c-260734e65c44-e7a0b076-9384-4b36-a66c-b4485f6d4c23",
+			"type": "straight",
+			"source": "Agama-call-Node-b9aa2445-9141-4b46-b6a1-e4a296842028",
+			"target": "Agama-call-Node-0d001f9c-34e2-43c1-a75c-260734e65c44",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			}
+		}
+	],
 	"viewport": {
-		"x": 702,
-		"y": 38,
+		"x": -365,
+		"y": 136,
 		"zoom": 1
 	}
 }
