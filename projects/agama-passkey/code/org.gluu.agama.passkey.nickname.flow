@@ -3,9 +3,10 @@ Flow org.gluu.agama.passkey.nickname
      Inputs key userData
 inum = userData.inum
 nicknameForm = RRF "nickname.ftlh" 
-fidoEnroller = Call org.gluu.agama.passkey.enroll.FidoEnroller#new inum nicknameForm.nickname key
+fidoEnroller = Call org.gluu.agama.passkey.enroll.FidoEnroller#new 
+nickNamed = Call fidoEnroller nameIt inum nicknameForm.nickname key
 When nickNamed is false
-     it_wxxmx = {success:false, error: "Nickname passkey failed to save"}
-     Finish it_wxxmx
-it_pfsbf = {success:true, data: { userId: inum, message: "Nickname passkey saved"}}
-Finish it_pfsbf
+     it_prlmb = {success:false, error: "Nickname passkey failed to save"}
+     Finish it_prlmb
+it_xcwsi = {success:true, data: { userId: inum, message: "Nickname passkey saved"}}
+Finish it_xcwsi
