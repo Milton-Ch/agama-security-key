@@ -495,7 +495,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 2813.3665260302632,
 				"y": 15.13464683370222
@@ -715,18 +715,13 @@
 							"variableTypeCheck": false,
 							"assignmentExpression": "userData.inum",
 							"assignedVariableName": "inum"
-						},
-						{
-							"variableTypeCheck": false,
-							"assignmentExpression": "userData.name",
-							"assignedVariableName": "name"
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 229,
@@ -1550,8 +1545,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1932,
-		"y": 129,
+		"x": 10,
+		"y": 15,
 		"zoom": 1
 	}
 }
