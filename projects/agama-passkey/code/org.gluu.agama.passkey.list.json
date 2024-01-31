@@ -73,7 +73,7 @@
 					"hasComment": true,
 					"comment": "",
 					"javaClassName": "",
-					"javaMethodName": "getFidoDevicesByUser",
+					"javaMethodName": "getFidoDeviceByUser",
 					"javaVariableName": "scimFido2Helper",
 					"exceptionVariableField": "",
 					"callType": "Call method on instance",
@@ -288,7 +288,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 2607.5235728875914,
 				"y": 666.1307377658793
@@ -1685,8 +1685,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1864,
-		"y": -267,
+		"x": -1684,
+		"y": -477,
 		"zoom": 1
 	}
 }
