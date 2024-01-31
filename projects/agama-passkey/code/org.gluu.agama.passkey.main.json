@@ -5,8 +5,8 @@
 			"height": 124,
 			"id": "finish-0ec140a8-d576-4116-9e5b-5099ba614fdc",
 			"position": {
-				"x": 1316.5615957770408,
-				"y": 21.37348596019683
+				"x": 1322.3267328979139,
+				"y": 28.785805115604973
 			},
 			"type": "finish",
 			"data": {
@@ -20,8 +20,8 @@
 					"Agama-repeat-Node-cb2c4b3b-58fa-4cfa-8df7-196eda6ea745.InRepeatBlock"
 				],
 				"position": {
-					"x": 1316.5615957770408,
-					"y": 21.37348596019683
+					"x": 1322.3267328979139,
+					"y": 28.785805115604973
 				},
 				"agamaData": {
 					"id": "finish-0ec140a8-d576-4116-9e5b-5099ba614fdc",
@@ -36,12 +36,13 @@
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Response error"
-				}
+				},
+				"skake": false
 			},
 			"selected": true,
 			"positionAbsolute": {
-				"x": 1316.5615957770408,
-				"y": 21.37348596019683
+				"x": 1322.3267328979139,
+				"y": 28.785805115604973
 			},
 			"dragging": false
 		},
