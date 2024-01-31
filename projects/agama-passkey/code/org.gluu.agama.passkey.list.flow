@@ -5,3 +5,5 @@ inum = userData.inum
 uid = userData.inum
 fidoValidator = Call org.gluu.agama.passkey.authn.FidoValidator#new 
 scimFido2Helper = Call org.gluu.agama.passkey.ScimFido2Helper#new scimSetting
+fidoDevice = Call scimFido2Helper getFidoDeviceByUser inum
+obj = { fidoDevice: fidoDevice, assertion: "{}", isAssertion: false, showError: false, errorTitle: "", errorMessage: "" }
