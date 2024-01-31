@@ -10,6 +10,14 @@ Repeat 50 times max
      mainForm = RRF "main.ftlh" obj
      When mainForm.tokenResponse is not ""
           verifyResponse | E = Call fidoValidator verify mainForm.tokenResponse
+          When E is not null
+               obj.isAssertion = false
+               obj.showError = true
+               obj.errorTitle = "Passkey authentication failed."
+               obj.errorMessage = E.message
+          When obj.isAssertion is null
+               it_dpddf = {success:true, data: { userId: verifyResponse }}
+               Finish it_dpddf
      When mainForm.skipped is skipped
           obj.isAssertion = false
           obj.showError = true
