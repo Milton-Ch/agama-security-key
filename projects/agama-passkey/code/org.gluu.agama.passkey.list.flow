@@ -9,6 +9,11 @@ fidoDevice = Call scimFido2Helper getFidoDeviceByUser inum
 obj = { fidoDevice: fidoDevice, assertion: "{}", isAssertion: false, showError: false, errorTitle: "", errorMessage: "" }
 Repeat 50 times max
      listForm = RRF "passkey-list.ftlh" obj
+     When listForm.loginWithPasskeyBtn is ""
+          destestable = Call fidoValidator assertionRequest uid
+          obj.showError = false
+          obj.isAssertion = true
+          obj.assertion = destestable
      When listForm.skipped is skipped
           obj.isAssertion = false
           obj.showError = true
@@ -21,5 +26,5 @@ Repeat 50 times max
                obj.errorTitle = "Passkey authentication failed."
                obj.errorMessage = E.message
           When E is null
-               it_zomfw = {success:true, data: { userId: inum }}
-               Finish it_zomfw
+               it_taiwi = {success:true, data: { userId: inum }}
+               Finish it_taiwi
