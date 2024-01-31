@@ -2,7 +2,6 @@ Flow org.gluu.agama.passkey.add
      Basepath ""
      Inputs userData
 inum = userData.inum
-name = userData.name
 fidoEnroller = Call org.gluu.agama.passkey.enroll.FidoEnroller#new 
 obj = { attestation: "{}", isAttestation: false, showError: false, errorTitle: "", errorMessage: "" }
 Repeat 50 times max
@@ -22,15 +21,15 @@ Repeat 50 times max
           When E is null and key is not null
                nicknameTrigger = Trigger org.gluu.agama.passkey.nickname key userData
                obj.isAttestation = false
-               it_mgucc = {success:true, data: { userId: inum, response: nicknameTrigger }}
-               Finish it_mgucc
+               it_nxnrc = {success:true, data: { userId: inum, response: nicknameTrigger }}
+               Finish it_nxnrc
           When E is not null
                obj.isAttestation = false
                obj.showError = true
                obj.errorTitle = "Passkey registration failed."
                obj.errorMessage = E.message
      When addDeviceForm.cancelBtn is ""
-          it_igrmg = {success:false, error: "Cancel event"}
-          Finish it_igrmg
-it_vzgrk = {success:false, error: "Passkey registration attempt exceeded."}
-Finish it_vzgrk
+          it_mvsto = {success:false, error: "Cancel event"}
+          Finish it_mvsto
+it_ycmxu = {success:false, error: "Passkey registration attempt exceeded."}
+Finish it_ycmxu
