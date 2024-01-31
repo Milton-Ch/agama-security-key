@@ -495,7 +495,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 2813.3665260302632,
 				"y": 15.13464683370222
@@ -768,7 +768,7 @@
 				"x": 29,
 				"y": 29
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 29,
 				"y": 29
@@ -890,7 +890,7 @@
 			"id": "Agama-when-Node-29f9a2a0-4165-49d2-a90c-42cc4653d99b",
 			"position": {
 				"x": 1377.7935000141124,
-				"y": 86.877591218139
+				"y": 85.877591218139
 			},
 			"parentId": "Agama-rrf-Node-ae26dbde-6160-4efd-b78b-580f9e92c847",
 			"type": "when",
@@ -902,7 +902,7 @@
 				"inRepeatBlock": true,
 				"position": {
 					"x": 1377.7935000141124,
-					"y": 81.877591218139
+					"y": 85.877591218139
 				},
 				"agamaData": {
 					"id": "Agama-when-Node-29f9a2a0-4165-49d2-a90c-42cc4653d99b",
@@ -930,7 +930,7 @@
 			"selected": false,
 			"positionAbsolute": {
 				"x": 1377.7935000141124,
-				"y": 86.877591218139
+				"y": 85.877591218139
 			},
 			"dragging": false
 		},
@@ -963,7 +963,7 @@
 						{
 							"variable": "addDeviceForm.skipped",
 							"operator": "is",
-							"dataValue": "skipped",
+							"dataValue": "\"skipped\"",
 							"combinator": "none"
 						}
 					],
@@ -1550,8 +1550,8 @@
 		}
 	],
 	"viewport": {
-		"x": 10,
-		"y": 15,
+		"x": -1932,
+		"y": 129,
 		"zoom": 1
 	}
 }
