@@ -15,8 +15,8 @@ Repeat 50 times max
                userData = Call org.gluu.agama.passkey.IdentityProccesor#accountFromUid authResult.uid
                listTrigger = Trigger org.gluu.agama.passkey.list userData conf
                When listTrigger.success is true
-                    it_zuopu = {success:true, data: { userId: uid }}
-                    Finish it_zuopu
+                    it_xzajh = {success:true, data: { userId: uid }}
+                    Finish it_xzajh
      When mainForm.loginWithPasskeyBtn is ""
           destestable = Call fidoValidator assertionRequest null
           obj.showError = false
@@ -30,12 +30,12 @@ Repeat 50 times max
                obj.errorTitle = "Passkey authentication failed."
                obj.errorMessage = E.message
           When obj.isAssertion is null
-               it_sxegv = {success:true, data: { userId: verifyResponse }}
-               Finish it_sxegv
+               it_rcsrt = {success:true, data: { userId: verifyResponse }}
+               Finish it_rcsrt
      When mainForm.skipped is skipped
           obj.isAssertion = false
           obj.showError = true
           obj.errorTitle = "Passkey authentication failed."
           obj.errorMessage = mainForm.errorMessage
-it_iofwu = {success:false, error: "Login attempt exceeded"}
-Finish it_iofwu
+it_qoflz = {success:false, error: "Login attempt exceeded"}
+Finish it_qoflz
