@@ -20,7 +20,7 @@ Repeat 50 times max
           obj.showError = false
           obj.isAssertion = true
           obj.assertion = destestable
-     When listForm.skipped is skipped
+     When listForm.skipped is "skipped"
           obj.isAssertion = false
           obj.showError = true
           obj.errorTitle = "Passkey authentication failed."
@@ -32,7 +32,7 @@ Repeat 50 times max
                obj.errorTitle = "Passkey authentication failed."
                obj.errorMessage = E.message
           When E is null
-               it_nfgax = {success:true, data: { userId: inum }}
-               Finish it_nfgax
-it_xziho = {success:false, error: "Passkey registration attempt exceeded"}
-Finish it_xziho
+               it_fhxwr = {success:true, data: { userId: inum }}
+               Finish it_fhxwr
+it_kpxel = {success:false, error: "Passkey registration attempt exceeded"}
+Finish it_kpxel
