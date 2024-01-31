@@ -52,7 +52,7 @@
 			"id": "finish-b3590c97-7f78-47ac-9fb4-c8ef7e830c0d",
 			"position": {
 				"x": 3093.80392980574,
-				"y": 1243.3409483097557
+				"y": 1242.3409483097557
 			},
 			"type": "finish",
 			"data": {
@@ -67,7 +67,7 @@
 				],
 				"position": {
 					"x": 3093.80392980574,
-					"y": 1243.3409483097557
+					"y": 1242.3409483097557
 				},
 				"agamaData": {
 					"id": "finish-b3590c97-7f78-47ac-9fb4-c8ef7e830c0d",
@@ -78,17 +78,17 @@
 					"hasComment": true,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "{ userId: uid }",
+					"returnVariable": "{ userId: userData.uid }",
 					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Response success"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 3093.80392980574,
-				"y": 1243.3409483097557
+				"y": 1242.3409483097557
 			},
 			"dragging": false
 		},
@@ -425,7 +425,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 2453.3672329249666,
 				"y": 666.5705670779025
@@ -1792,8 +1792,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1765,
-		"y": -229,
+		"x": -2486,
+		"y": -959,
 		"zoom": 1
 	}
 }
