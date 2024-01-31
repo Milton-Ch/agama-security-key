@@ -5,3 +5,4 @@ authService = Call io.jans.as.server.service.AuthenticationService#class
 cdiUtil = Call io.jans.service.cdi.util.CdiUtil#bean authService
 fidoValidator = Call org.gluu.agama.passkey.authn.FidoValidator#new 
 authResult = {}
+obj = { success: true, assertion: "{}", isAssertion: false, showError: false, errorTitle: "", errorMessage: "" }
