@@ -1,2 +1,7 @@
 Flow org.gluu.agama.passkey.list
      Basepath ""
+     Inputs userData scimSetting
+inum = userData.inum
+uid = userData.inum
+fidoValidator = Call org.gluu.agama.passkey.authn.FidoValidator#new 
+scimFido2Helper = Call org.gluu.agama.passkey.ScimFido2Helper#new scimSetting
