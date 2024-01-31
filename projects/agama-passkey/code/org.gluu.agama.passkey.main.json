@@ -33,10 +33,16 @@
 							"variableTypeCheck": false,
 							"assignmentExpression": "{}",
 							"assignedVariableName": "authResult"
+						},
+						{
+							"variableTypeCheck": false,
+							"assignmentExpression": "{ success: true, assertion: \"{}\", isAssertion: false, showError: false, errorTitle: \"\", errorMessage: \"\" }",
+							"assignedVariableName": "obj"
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": true,
 			"dragging": false,
@@ -299,8 +305,8 @@
 		}
 	],
 	"viewport": {
-		"x": -821.0690014812512,
-		"y": 97.10646317414728,
+		"x": -1202.0690014812517,
+		"y": 116.10646317414731,
 		"zoom": 1.647182034535148
 	}
 }
