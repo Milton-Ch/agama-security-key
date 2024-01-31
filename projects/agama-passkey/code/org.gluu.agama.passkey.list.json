@@ -1,11 +1,58 @@
 {
 	"nodes": [
 		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-call-Node-a417cb5f-611c-4eb0-97c7-ca19d0828191",
+			"position": {
+				"x": 2608.660915276307,
+				"y": 497.5943455655605
+			},
+			"type": "call",
+			"data": {
+				"id": "Agama-call-Node-a417cb5f-611c-4eb0-97c7-ca19d0828191",
+				"type": "Agama-call-Node",
+				"parentId": "Agama-when-Node-ce5621e5-11f9-4f9c-b05e-d9292150f7e5",
+				"whenCondition": "WhenTrue",
+				"inRepeatBlock": true,
+				"position": {
+					"x": 2608.660915276307,
+					"y": 497.5943455655605
+				},
+				"agamaData": {
+					"id": "Agama-call-Node-a417cb5f-611c-4eb0-97c7-ca19d0828191",
+					"parentId": "Agama-when-Node-ce5621e5-11f9-4f9c-b05e-d9292150f7e5",
+					"type": "Agama-call-Node",
+					"displayName": "Assertion verify",
+					"hasComment": true,
+					"comment": "",
+					"javaClassName": "",
+					"javaMethodName": "verify",
+					"javaVariableName": "fidoValidator",
+					"exceptionVariableField": "E",
+					"callType": "Call method on instance",
+					"whenCondition": "WhenTrue",
+					"inRepeatBlock": true,
+					"arguments": [
+						"listForm.tokenResponse"
+					],
+					"nodeIcon": "material-symbols:code",
+					"asssignedVariableName": "verifyResponse"
+				}
+			},
+			"selected": true,
+			"positionAbsolute": {
+				"x": 2608.660915276307,
+				"y": 497.5943455655605
+			},
+			"dragging": false
+		},
+		{
 			"width": 210,
 			"height": 140,
 			"id": "Agama-when-Node-ce5621e5-11f9-4f9c-b05e-d9292150f7e5",
 			"position": {
-				"x": 2418.9443095074603,
+				"x": 2419.6612871314683,
 				"y": 296.27345052587714
 			},
 			"parentId": "Agama-rrf-Node-88cdeffc-e4a7-46cb-a159-29bac8d3f8f2",
@@ -17,8 +64,8 @@
 				"whenCondition": "",
 				"inRepeatBlock": true,
 				"position": {
-					"x": 2418.9443095074603,
-					"y": 276.27345052587714
+					"x": 2419.6612871314683,
+					"y": 296.27345052587714
 				},
 				"agamaData": {
 					"id": "Agama-when-Node-ce5621e5-11f9-4f9c-b05e-d9292150f7e5",
@@ -40,16 +87,18 @@
 					],
 					"comment": "",
 					"hasComment": true,
-					"inRepeatBlock": true
+					"inRepeatBlock": true,
+					"hasSuccess": true
 				},
 				"handles": [
 					"Agama-when-Node-ce5621e5-11f9-4f9c-b05e-d9292150f7e5.FAILURE",
 					"Agama-when-Node-ce5621e5-11f9-4f9c-b05e-d9292150f7e5.SUCCESS"
-				]
+				],
+				"skake": true
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
-				"x": 2418.9443095074603,
+				"x": 2419.6612871314683,
 				"y": 296.27345052587714
 			},
 			"dragging": false
@@ -87,7 +136,8 @@
 					"templatePath": "passkey-list.ftlh",
 					"asssignedVariableName": "listForm",
 					"arguments": "obj"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -127,7 +177,8 @@
 					"maxIteration": "50",
 					"displayName": "Repeat 50 times",
 					"hasComment": true
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -571,11 +622,29 @@
 				"fillOpacity": 0.7
 			},
 			"sourceHandle": "Agama-when-Node-ce5621e5-11f9-4f9c-b05e-d9292150f7e5.SUCCESS"
+		},
+		{
+			"id": "Agama-when-Node-ce5621e5-11f9-4f9c-b05e-d9292150f7e5-Agama-call-Node-a417cb5f-611c-4eb0-97c7-ca19d0828191-a127dc09-4c07-4829-832e-6895608e189c",
+			"type": "straight",
+			"source": "Agama-when-Node-ce5621e5-11f9-4f9c-b05e-d9292150f7e5",
+			"target": "Agama-call-Node-a417cb5f-611c-4eb0-97c7-ca19d0828191",
+			"label": "Condition met",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#FFCC00",
+				"color": "#fff",
+				"fillOpacity": 0.7
+			},
+			"sourceHandle": "Agama-when-Node-ce5621e5-11f9-4f9c-b05e-d9292150f7e5.SUCCESS"
 		}
 	],
 	"viewport": {
-		"x": -3058.168591365147,
-		"y": -300.6715091635492,
+		"x": -3077.168591365147,
+		"y": -329.6715091635492,
 		"zoom": 1.3947436663504058
 	}
 }
