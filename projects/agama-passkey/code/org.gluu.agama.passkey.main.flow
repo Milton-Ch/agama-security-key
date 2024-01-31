@@ -1,2 +1,6 @@
 Flow org.gluu.agama.passkey.main
      Basepath ""
+     Configs conf
+authService = Call io.jans.as.server.service.AuthenticationService#class
+cdiUtil = Call io.jans.service.cdi.util.CdiUtil#bean authService
+fidoValidator = Call org.gluu.agama.passkey.authn.FidoValidator#new 
