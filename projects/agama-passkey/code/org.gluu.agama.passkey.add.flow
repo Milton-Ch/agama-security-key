@@ -22,15 +22,15 @@ Repeat 50 times max
           When E is null and key is not null
                nicknameTrigger = Trigger org.gluu.agama.passkey.nickname key userData
                obj.isAttestation = false
-               it_mqpkf = {success:true, data: { userId: inum, response: nicknameTrigger }}
-               Finish it_mqpkf
+               it_reznf = {success:true, data: { userId: inum, response: nicknameTrigger }}
+               Finish it_reznf
           When E is not null
                obj.isAttestation = false
                obj.showError = true
                obj.errorTitle = "Passkey registration failed."
                obj.errorMessage = E.message
      When addDeviceForm.cancelBtn is ""
-          it_ratnq = {success:false, error: "Cancel event"}
-          Finish it_ratnq
-it_colrv = {success:false, error: "Passkey registration attempt exceeded."}
-Finish it_colrv
+          it_uuhrp = {success:false, error: "Cancel event"}
+          Finish it_uuhrp
+it_cskeb = {success:false, error: "Passkey registration attempt exceeded."}
+Finish it_cskeb
