@@ -232,7 +232,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 1783.9455156543495,
 				"y": 486.16283121287927
@@ -1144,7 +1144,7 @@
 			"id": "Agama-when-Node-aabe4891-06a1-4e4f-b537-981a856e53da",
 			"position": {
 				"x": 1634.3347431500333,
-				"y": 284.7826844414697
+				"y": 283.7826844414697
 			},
 			"parentId": "Agama-rrf-Node-88cdeffc-e4a7-46cb-a159-29bac8d3f8f2",
 			"type": "when",
@@ -1156,7 +1156,7 @@
 				"inRepeatBlock": true,
 				"position": {
 					"x": 1634.3347431500333,
-					"y": 284.7826844414697
+					"y": 283.7826844414697
 				},
 				"agamaData": {
 					"id": "Agama-when-Node-aabe4891-06a1-4e4f-b537-981a856e53da",
@@ -1165,7 +1165,7 @@
 					"hasFailure": true,
 					"conditions": [
 						{
-							"variable": "listForm.addPasskeyBtn",
+							"variable": "listForm.addAPasskeyBtn",
 							"operator": "is",
 							"dataValue": "\"\"",
 							"combinator": "none"
@@ -1180,10 +1180,10 @@
 				],
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 1634.3347431500333,
-				"y": 284.7826844414697
+				"y": 283.7826844414697
 			},
 			"dragging": false
 		},
@@ -1685,8 +1685,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1301.3613908561902,
-		"y": -180.90613266528328,
+		"x": -1326,
+		"y": -150,
 		"zoom": 1
 	}
 }
