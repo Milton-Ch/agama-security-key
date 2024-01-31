@@ -39,7 +39,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 1480,
 				"y": 27
@@ -1110,7 +1110,7 @@
 						{
 							"variable": "listForm.skipped",
 							"operator": "is",
-							"dataValue": "skipped",
+							"dataValue": "\"skipped\"",
 							"combinator": "none"
 						}
 					],
@@ -1127,7 +1127,7 @@
 				],
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 2529.555044510517,
 				"y": 294.2306257329059
@@ -1683,8 +1683,8 @@
 		}
 	],
 	"viewport": {
-		"x": 10,
-		"y": 15,
+		"x": -2059,
+		"y": -344,
 		"zoom": 1
 	}
 }
