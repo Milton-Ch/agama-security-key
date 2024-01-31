@@ -10,3 +10,4 @@ obj = { fidoDevice: fidoDevice, assertion: "{}", isAssertion: false, showError: 
 Repeat 50 times max
      listForm = RRF "passkey-list.ftlh" obj
      When listForm.tokenResponse is not "" and listForm.tokenResponse is not null
+          verifyResponse | E = Call fidoValidator verify listForm.tokenResponse
