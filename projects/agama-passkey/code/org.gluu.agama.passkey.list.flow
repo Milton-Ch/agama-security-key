@@ -11,6 +11,10 @@ Repeat 50 times max
      listForm = RRF "passkey-list.ftlh" obj
      When listForm.tokenResponse is not "" and listForm.tokenResponse is not null
           verifyResponse | E = Call fidoValidator verify listForm.tokenResponse
+          When E is not null
+               obj.showError = true
+               obj.errorTitle = "Passkey authentication failed."
+               obj.errorMessage = E.message
           When E is null
-               it_rwhng = {success:true, data: { userId: inum }}
-               Finish it_rwhng
+               it_sinhc = {success:true, data: { userId: inum }}
+               Finish it_sinhc
