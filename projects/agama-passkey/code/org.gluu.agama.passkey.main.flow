@@ -8,7 +8,7 @@ authResult = {}
 obj = { success: true, assertion: "{}", isAssertion: false, showError: false, errorTitle: "", errorMessage: "" }
 Repeat 50 times max
      mainForm = RRF "main.ftlh" obj
-     When 
+     When mainForm.loginBtn is ""
           authResult.success = Call cdiUtil authenticate mainForm.username mainForm.password
           authResult.uid = mainForm.username
           When authResult.success is true
@@ -27,8 +27,8 @@ Repeat 50 times max
                obj.errorTitle = "Passkey authentication failed."
                obj.errorMessage = E.message
           When obj.isAssertion is null
-               it_szvmm = {success:true, data: { userId: verifyResponse }}
-               Finish it_szvmm
+               it_uhzja = {success:true, data: { userId: verifyResponse }}
+               Finish it_uhzja
      When mainForm.skipped is skipped
           obj.isAssertion = false
           obj.showError = true
