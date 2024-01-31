@@ -7,3 +7,6 @@ fidoValidator = Call org.gluu.agama.passkey.authn.FidoValidator#new
 scimFido2Helper = Call org.gluu.agama.passkey.ScimFido2Helper#new scimSetting
 fidoDevice = Call scimFido2Helper getFidoDeviceByUser inum
 obj = { fidoDevice: fidoDevice, assertion: "{}", isAssertion: false, showError: false, errorTitle: "", errorMessage: "" }
+Repeat 50 times max
+     listForm = RRF "passkey-list.ftlh" obj
+     When listForm.tokenResponse is not "" and listForm.tokenResponse is not null
