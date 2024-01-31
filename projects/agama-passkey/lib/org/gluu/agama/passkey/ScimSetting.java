@@ -1,4 +1,4 @@
-package passkey;
+package org.gluu.agama.passkey;
 
 public class ScimSetting {
 

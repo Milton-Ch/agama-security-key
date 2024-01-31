@@ -1,4 +1,4 @@
-package passkey.dto;
+package org.gluu.agama.passkey.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

@@ -1,9 +1,9 @@
-package passkey.enroll;
+package org.gluu.agama.passkey.enroll;
 
 import com.nimbusds.oauth2.sdk.http.HTTPRequest;
 import com.nimbusds.oauth2.sdk.http.HTTPResponse;
-import net.minidev.json.JSONObject;
 import org.gluu.agama.passkey.CasaWSBase;
+import net.minidev.json.JSONObject;
 
 import java.io.IOException;
 import java.net.URL;

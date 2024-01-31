@@ -1,4 +1,4 @@
-package passkey;
+package org.gluu.agama.passkey;
 
 import io.jans.as.common.model.common.User;
 import io.jans.as.common.service.common.UserService;
