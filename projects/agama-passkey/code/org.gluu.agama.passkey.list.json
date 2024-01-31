@@ -46,7 +46,8 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": true,
 			"positionAbsolute": {
@@ -93,7 +94,8 @@
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "destestable"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -881,7 +883,8 @@
 				"handles": [
 					"Agama-when-Node-1c6dd4a0-70db-46ac-acd4-4c4ce4d8d9f3.FAILURE",
 					"Agama-when-Node-1c6dd4a0-70db-46ac-acd4-4c4ce4d8d9f3.SUCCESS"
-				]
+				],
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -1283,7 +1286,7 @@
 	],
 	"viewport": {
 		"x": -1577.0242691911053,
-		"y": -191.8288389771294,
+		"y": -199.8288389771294,
 		"zoom": 0.8467453123625271
 	}
 }
