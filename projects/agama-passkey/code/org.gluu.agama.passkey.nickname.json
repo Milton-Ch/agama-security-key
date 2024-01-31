@@ -6,7 +6,7 @@
 			"id": "finish-2dd91a73-7ce4-480a-8ecb-31aee5748398",
 			"position": {
 				"x": 1327,
-				"y": 23.605256333649606
+				"y": 22.605256333649606
 			},
 			"type": "finish",
 			"data": {
@@ -21,7 +21,7 @@
 				],
 				"position": {
 					"x": 1327,
-					"y": 23.605256333649606
+					"y": 22.605256333649606
 				},
 				"agamaData": {
 					"id": "finish-2dd91a73-7ce4-480a-8ecb-31aee5748398",
@@ -32,7 +32,7 @@
 					"hasComment": true,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "{ userId: name, message: \"Nickname passkey saved\"}",
+					"returnVariable": "{ userId: inum, message: \"Nickname passkey saved\"}",
 					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Response success"
@@ -42,7 +42,7 @@
 			"selected": false,
 			"positionAbsolute": {
 				"x": 1327,
-				"y": 23.605256333649606
+				"y": 22.605256333649606
 			},
 			"dragging": false
 		},
@@ -97,8 +97,8 @@
 			"height": 140,
 			"id": "Agama-when-Node-ab55f7db-7275-4b2f-99fe-d199109d2248",
 			"position": {
-				"x": 1030,
-				"y": 82
+				"x": 1056,
+				"y": 84
 			},
 			"parentId": "Agama-call-Node-acd4653c-25da-4588-bfa6-6cb94d88dc95",
 			"type": "when",
@@ -109,8 +109,8 @@
 				"whenCondition": "",
 				"inRepeatBlock": false,
 				"position": {
-					"x": 1030,
-					"y": 82
+					"x": 1056,
+					"y": 84
 				},
 				"agamaData": {
 					"id": "Agama-when-Node-ab55f7db-7275-4b2f-99fe-d199109d2248",
@@ -137,10 +137,10 @@
 				],
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
-				"x": 1030,
-				"y": 82
+				"x": 1056,
+				"y": 84
 			},
 			"dragging": false
 		},
@@ -314,11 +314,6 @@
 							"variableTypeCheck": false,
 							"assignmentExpression": "userData.inum",
 							"assignedVariableName": "inum"
-						},
-						{
-							"variableTypeCheck": false,
-							"assignmentExpression": "userData.name",
-							"assignedVariableName": "name"
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
@@ -499,8 +494,8 @@
 		}
 	],
 	"viewport": {
-		"x": 10,
-		"y": 15,
+		"x": -210,
+		"y": 100,
 		"zoom": 1
 	}
 }
