@@ -8,6 +8,8 @@ authResult = {}
 obj = { success: true, assertion: "{}", isAssertion: false, showError: false, errorTitle: "", errorMessage: "" }
 Repeat 50 times max
      mainForm = RRF "main.ftlh" obj
+     When mainForm.tokenResponse is not ""
+          verifyResponse | E = Call fidoValidator verify mainForm.tokenResponse
      When mainForm.skipped is skipped
           obj.isAssertion = false
           obj.showError = true
