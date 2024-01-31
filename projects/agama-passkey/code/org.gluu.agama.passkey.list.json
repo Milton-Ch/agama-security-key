@@ -224,13 +224,15 @@
 					"inRepeatBlock": true,
 					"nodeIcon": "fluent-mdl2:trigger-approval",
 					"flowFileName": "org.gluu.agama.passkey.add",
-					"arguments": "userData",
+					"arguments": [
+						"userData"
+					],
 					"asssignedVariableName": "addTrigger",
 					"exceptionVariableField": ""
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 1783.9455156543495,
 				"y": 486.16283121287927
@@ -867,7 +869,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 229,
@@ -1683,8 +1685,8 @@
 		}
 	],
 	"viewport": {
-		"x": -170,
-		"y": 130,
+		"x": -1301.3613908561902,
+		"y": -180.90613266528328,
 		"zoom": 1
 	}
 }
