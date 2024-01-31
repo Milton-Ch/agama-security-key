@@ -210,7 +210,7 @@
 					"displayName": "Get account from UID",
 					"hasComment": true,
 					"comment": "",
-					"javaClassName": "org.gluu.agama.passkey.IdentityProccesor",
+					"javaClassName": "org.gluu.agama.passkey.IdentityProcessor",
 					"javaMethodName": "accountFromUid",
 					"javaVariableName": "",
 					"exceptionVariableField": "",
@@ -225,7 +225,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 2439.397462641198,
 				"y": 1027.816090494094
@@ -1164,7 +1164,7 @@
 				],
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 3180.899513911112,
 				"y": 653.008030805264
@@ -1792,8 +1792,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2321,
-		"y": -405,
+		"x": -1903,
+		"y": -660,
 		"zoom": 1
 	}
 }
