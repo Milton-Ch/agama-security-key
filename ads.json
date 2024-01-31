@@ -44,9 +44,11 @@
         "configs": {
             "org.gluu.agama.passkey.add": {},
             "org.gluu.agama.passkey.nickname": {},
-            "": {},
             "org.gluu.agama.passkey.list": {},
-            "org.gluu.agama.passkey.main": {}
+            "org.gluu.agama.passkey.main": {
+                "scimClientId": "<YOUR_SCIM_CLIENT_ID>",
+                "scimClientSecret": "<YOUR_SCIM_CLIENT_SECRET>"
+            }
         },
         "name": "agama-passkey"
     }
