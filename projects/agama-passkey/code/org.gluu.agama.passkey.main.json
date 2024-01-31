@@ -36,7 +36,8 @@
 					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Response success"
-				}
+				},
+				"skake": false
 			},
 			"selected": true,
 			"positionAbsolute": {
@@ -84,7 +85,8 @@
 				"handles": [
 					"Agama-when-Node-1e9f7568-075a-42eb-984a-2544bafabc1b.FAILURE",
 					"Agama-when-Node-1e9f7568-075a-42eb-984a-2544bafabc1b.SUCCESS"
-				]
+				],
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
