@@ -2,7 +2,7 @@ Flow org.gluu.agama.passkey.list
      Basepath ""
      Inputs userData scimSetting
 inum = userData.inum
-uid = userData.inum
+uid = userData.uid
 fidoValidator = Call org.gluu.agama.passkey.authn.FidoValidator#new 
 scimFido2Helper = Call org.gluu.agama.passkey.ScimFido2Helper#new scimSetting
 fidoDevice = Call scimFido2Helper getFidoDeviceByUser inum
@@ -32,7 +32,7 @@ Repeat 50 times max
                obj.errorTitle = "Passkey authentication failed."
                obj.errorMessage = E.message
           When E is null
-               it_fhxwr = {success:true, data: { userId: inum }}
-               Finish it_fhxwr
-it_kpxel = {success:false, error: "Passkey registration attempt exceeded"}
-Finish it_kpxel
+               it_lzjhm = {success:true, data: { userId: inum }}
+               Finish it_lzjhm
+it_biavl = {success:false, error: "Passkey registration attempt exceeded"}
+Finish it_biavl
