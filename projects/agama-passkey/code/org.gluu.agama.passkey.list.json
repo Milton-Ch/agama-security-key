@@ -36,7 +36,8 @@
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Response  error attempt exceeded"
-				}
+				},
+				"skake": false
 			},
 			"selected": true,
 			"positionAbsolute": {
@@ -1682,8 +1683,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1407,
-		"y": 116,
+		"x": 10,
+		"y": 15,
 		"zoom": 1
 	}
 }
