@@ -7,7 +7,7 @@ nicknameForm = RRF "nickname.ftlh"
 fidoEnroller = Call org.gluu.agama.passkey.enroll.FidoEnroller#new 
 nickNamed = Call fidoEnroller nameIt nicknameForm.nickname key
 When nickNamed is false
-     it_lrubb = {success:false, error: "Nickname passkey failed to save"}
-     Finish it_lrubb
-it_nwizi = {success:true, data: { userId: name, message: "Nickname passkey saved"}}
-Finish it_nwizi
+     it_dkijj = {success:false, error: "Nickname passkey failed to save"}
+     Finish it_dkijj
+it_zvvoc = {success:true, data: { userId: name, message: "Nickname passkey saved"}}
+Finish it_zvvoc
