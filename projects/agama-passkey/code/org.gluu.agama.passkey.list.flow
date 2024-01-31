@@ -32,5 +32,7 @@ Repeat 50 times max
                obj.errorTitle = "Passkey authentication failed."
                obj.errorMessage = E.message
           When E is null
-               it_rpanh = {success:true, data: { userId: inum }}
-               Finish it_rpanh
+               it_gqqqe = {success:true, data: { userId: inum }}
+               Finish it_gqqqe
+it_killu = {success:false, error: "Passkey registration attempt exceeded"}
+Finish it_killu
