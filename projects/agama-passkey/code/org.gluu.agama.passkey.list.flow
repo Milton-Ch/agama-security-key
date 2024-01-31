@@ -11,3 +11,6 @@ Repeat 50 times max
      listForm = RRF "passkey-list.ftlh" obj
      When listForm.tokenResponse is not "" and listForm.tokenResponse is not null
           verifyResponse | E = Call fidoValidator verify listForm.tokenResponse
+          When E is null
+               it_rwhng = {success:true, data: { userId: inum }}
+               Finish it_rwhng
