@@ -32,12 +32,13 @@
 					"hasComment": true,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "{ userId: inum, message: \"Nickname passkey saved\"}",
+					"returnVariable": "{ userId: name, message: \"Nickname passkey saved\"}",
 					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 1327,
 				"y": 25
@@ -79,9 +80,10 @@
 					"returnVariable": "Nickname passkey failed to save",
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
-				}
+				},
+				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 1265,
 				"y": 287
@@ -130,7 +132,8 @@
 				"handles": [
 					"Agama-when-Node-ab55f7db-7275-4b2f-99fe-d199109d2248.FAILURE",
 					"Agama-when-Node-ab55f7db-7275-4b2f-99fe-d199109d2248.SUCCESS"
-				]
+				],
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -491,8 +494,8 @@
 		}
 	],
 	"viewport": {
-		"x": -818,
-		"y": 68,
-		"zoom": 1
+		"x": -443.6751518510339,
+		"y": 142.77462329365756,
+		"zoom": 0.7169776240079136
 	}
 }
