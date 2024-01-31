@@ -760,7 +760,7 @@
 					"timeout": "",
 					"inputs": "userData",
 					"configs": "",
-					"flowname": "org.gluu.agama.passkey.nickname"
+					"flowname": "org.gluu.agama.passkey.add"
 				},
 				"skake": false
 			},

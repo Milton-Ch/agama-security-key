@@ -1,4 +1,4 @@
-Flow org.gluu.agama.passkey.nickname
+Flow org.gluu.agama.passkey.add
      Basepath ""
      Inputs userData
 inum = userData.inum
