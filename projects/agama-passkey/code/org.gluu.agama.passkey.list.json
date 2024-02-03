@@ -447,13 +447,18 @@
 							"variableTypeCheck": false,
 							"assignmentExpression": "E.message",
 							"assignedVariableName": "obj.errorMessage"
+						},
+						{
+							"variableTypeCheck": false,
+							"assignmentExpression": "false",
+							"assignedVariableName": "obj.isAssertion"
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 3570.0676823964686,
 				"y": 768.8522134712923
@@ -1685,8 +1690,8 @@
 		}
 	],
 	"viewport": {
-		"x": -29.460308464679883,
-		"y": 76.14718203453515,
-		"zoom": 0.5
+		"x": -6245.640068275639,
+		"y": -1145.600881769794,
+		"zoom": 1.892115293451193
 	}
 }
