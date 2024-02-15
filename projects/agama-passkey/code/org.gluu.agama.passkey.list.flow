@@ -9,6 +9,11 @@ fidoDevice = Call scimFido2Helper getFidoDeviceByUser inum
 obj = { fidoDevice: fidoDevice, assertion: "{}", isAssertion: false, showError: false, errorTitle: "", errorMessage: "" }
 Repeat 50 times max
      listForm = RRF "passkey-list.ftlh" obj
+     When listForm.deviceId is not ""
+          obj.canEdit = false
+          obj.isAssertion = false
+          obj.showError = false
+          nickNamed | E = Call scimFidoHelper updateDevice inum listForm.deviceId listForm.nickname
      When listForm.cancelItemBtn is ""
           obj.canEdit = false
           obj.isAssertion = false
@@ -41,7 +46,7 @@ Repeat 50 times max
                obj.errorMessage = E.message
                obj.isAssertion = false
           When E is null
-               it_lgqdm = {success:true, data: { userId: inum }}
-               Finish it_lgqdm
-it_gkzzf = {success:false, error: "Passkey registration attempt exceeded"}
-Finish it_gkzzf
+               it_xxpmx = {success:true, data: { userId: inum }}
+               Finish it_xxpmx
+it_lnoif = {success:false, error: "Passkey registration attempt exceeded"}
+Finish it_lnoif
