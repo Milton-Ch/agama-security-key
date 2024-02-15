@@ -51,7 +51,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 2682.835856341452,
 				"y": 940.1111504319175
@@ -742,8 +742,8 @@
 			"height": 124,
 			"id": "Agama-assignment-Node-c30a51f2-cf52-4bcb-a34d-2af5259a7689",
 			"position": {
-				"x": 4231.03334488657,
-				"y": 704.4995697317404
+				"x": 4193.750508438159,
+				"y": 743.2163614281676
 			},
 			"type": "assignment",
 			"data": {
@@ -753,8 +753,8 @@
 				"whenCondition": "WhenTrue",
 				"inRepeatBlock": true,
 				"position": {
-					"x": 4231.03334488657,
-					"y": 704.4995697317404
+					"x": 4193.750508438159,
+					"y": 743.2163614281676
 				},
 				"agamaData": {
 					"id": "Agama-assignment-Node-c30a51f2-cf52-4bcb-a34d-2af5259a7689",
@@ -793,8 +793,8 @@
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 4231.03334488657,
-				"y": 704.4995697317404
+				"x": 4193.750508438159,
+				"y": 743.2163614281676
 			},
 			"dragging": false
 		},
@@ -803,8 +803,8 @@
 			"height": 124,
 			"id": "finish-e1de5f45-5633-466e-aebf-fe817f5cafb2",
 			"position": {
-				"x": 4588.888492456384,
-				"y": 697.5709608816402
+				"x": 4570.247074232178,
+				"y": 744.8914840661624
 			},
 			"type": "finish",
 			"data": {
@@ -818,8 +818,8 @@
 					"Agama-when-Node-2ad0d068-ef15-4590-9e78-17c25e264eae.SUCCESS"
 				],
 				"position": {
-					"x": 4588.888492456384,
-					"y": 697.5709608816402
+					"x": 4570.247074232178,
+					"y": 744.8914840661624
 				},
 				"agamaData": {
 					"id": "finish-e1de5f45-5633-466e-aebf-fe817f5cafb2",
@@ -837,10 +837,10 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
-				"x": 4588.888492456384,
-				"y": 697.5709608816402
+				"x": 4570.247074232178,
+				"y": 744.8914840661624
 			},
 			"dragging": false
 		},
@@ -2339,8 +2339,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1383.8367815443253,
-		"y": -60.66540883052642,
+		"x": -2210.8367815443253,
+		"y": -257.6654088305263,
 		"zoom": 0.6973718331752036
 	}
 }
