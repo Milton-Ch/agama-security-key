@@ -837,7 +837,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 4570.247074232178,
 				"y": 744.8914840661624
@@ -1008,7 +1008,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": false,
-							"assignmentExpression": "{ fidoDevice: fidoDevice, assertion: \"{}\", isAssertion: false, showError: false, errorTitle: \"\", errorMessage: \"\" }",
+							"assignmentExpression": "{ fidoDevice: fidoDevice, assertion: \"{}\", isAssertion: false, showError: false, errorTitle: \"\", errorMessage: \"\", canEdit: false }",
 							"assignedVariableName": "obj"
 						}
 					],
@@ -1016,7 +1016,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1029,
@@ -2339,8 +2339,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2210.8367815443253,
-		"y": -257.6654088305263,
+		"x": -410.8367815443256,
+		"y": 8.334591169473697,
 		"zoom": 0.6973718331752036
 	}
 }
