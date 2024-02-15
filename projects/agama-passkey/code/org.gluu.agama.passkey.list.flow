@@ -50,7 +50,7 @@ Repeat 50 times max
                obj.errorMessage = E.message
                obj.isAssertion = false
           When E is null
-               it_tfiep = {success:true, data: { userId: inum }}
-               Finish it_tfiep
-it_nedtu = {success:false, error: "Passkey registration attempt exceeded"}
-Finish it_nedtu
+               it_gagkc = {success:true, data: { userId: inum }}
+               Finish it_gagkc
+it_dosir = {success:false, error: "Passkey registration attempt exceeded"}
+Finish it_dosir
