@@ -9,6 +9,10 @@ fidoDevice = Call scimFido2Helper getFidoDeviceByUser inum
 obj = { fidoDevice: fidoDevice, assertion: "{}", isAssertion: false, showError: false, errorTitle: "", errorMessage: "" }
 Repeat 50 times max
      listForm = RRF "passkey-list.ftlh" obj
+     When listForm.editItemBtn is ""
+          obj.canEdit = true
+          obj.isAssertion = false
+          obj.showError = false
      When listForm.addAPasskeyBtn is ""
           addTrigger = Trigger org.gluu.agama.passkey.add userData
           obj.showError = false
@@ -33,7 +37,7 @@ Repeat 50 times max
                obj.errorMessage = E.message
                obj.isAssertion = false
           When E is null
-               it_zkvhx = {success:true, data: { userId: inum }}
-               Finish it_zkvhx
-it_qkhsf = {success:false, error: "Passkey registration attempt exceeded"}
-Finish it_qkhsf
+               it_vjvfr = {success:true, data: { userId: inum }}
+               Finish it_vjvfr
+it_fdmyt = {success:false, error: "Passkey registration attempt exceeded"}
+Finish it_fdmyt
