@@ -14,6 +14,8 @@ Repeat 50 times max
           obj.isAssertion = false
           obj.showError = false
           nickNamed | E = Call scimFidoHelper updateDevice inum listForm.deviceId listForm.nickname
+          When E is null
+               obj.fidoDevice = Call scimFido2Helper getFidoDeviceByUser inum
           When E is not null
                obj.showError = false
                obj.errorTitle = "Passkey failed to set a new nickname"
@@ -50,7 +52,7 @@ Repeat 50 times max
                obj.errorMessage = E.message
                obj.isAssertion = false
           When E is null
-               it_erwrp = {success:true, data: { userId: inum }}
-               Finish it_erwrp
-it_jyyoi = {success:false, error: "Passkey registration attempt exceeded"}
-Finish it_jyyoi
+               it_ovbwi = {success:true, data: { userId: inum }}
+               Finish it_ovbwi
+it_ercfe = {success:false, error: "Passkey registration attempt exceeded"}
+Finish it_ercfe
