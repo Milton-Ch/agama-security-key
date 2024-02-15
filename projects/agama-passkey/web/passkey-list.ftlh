@@ -49,14 +49,14 @@
         }
     });
 </script>
-<section class="bg-gray-100 dark:bg-gray-900">
+<section class="bg-gray-100">
     <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-        <div class="flex flex-col items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
+        <div class="flex flex-col items-center mb-6 text-2xl font-semibold text-gray-900">
             <img class="w-40 mr-2"
                  src="https://gluu.org/wp-content/uploads/2021/02/janssen-project-transparent-630px-182px-300x86.png"
                  alt="logo">
         </div>
-        <div class="w-full bg-white rounded-lg shadow-lg dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
+        <div class="w-full bg-white rounded-lg shadow-lg md:mt-0 sm:max-w-md xl:p-0">
             <form method="post" enctype="application/x-www-form-urlencoded"
                   class="p-6 space-y-4 md:space-y-6 sm:p-8 text-gray-900">
                 <#if fidoDevice.count == 0>
@@ -68,7 +68,7 @@
                         </svg>
                     </div>
 
-                    <h1 class="text-xl text-center font-medium md:text-2xl dark:text-white">
+                    <h1 class="text-xl text-center font-medium md:text-2xl">
                         Passwordless sign-in with passkeys
                     </h1>
 
@@ -84,17 +84,17 @@
                     <div class="text-center">
                         <button type="submit"
                                 name="addAPasskeyBtn"
-                                class="bg-gray-50 border border-gray-300 hover:bg-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                                class="bg-gray-50 border border-gray-300 hover:bg-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
                             Add a passkey
                         </button>
                     </div>
                 <#else>
-                    <h1 class="text-xl text-center font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                    <h1 class="text-xl text-center font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
                         Your Passkeys
                     </h1>
 
                     <div>
-                        <ul class="w-full divide-y divide-gray-200 dark:divide-gray-700 text-left">
+                        <ul class="w-full divide-y divide-gray-200 text-left">
                             <#list fidoDevice.devices as device>
                                 <li class="pb-3 sm:pb-4">
                                     <div class="flex items-center space-x-4 rtl:space-x-reverse">
@@ -107,31 +107,40 @@
                                             </svg>
                                         </div>
                                         <div class="flex-1 min-w-0">
-                                            <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
-                                                ${device.displayName}
-                                            </p>
-                                            <p class="text-sm text-gray-500 truncate dark:text-gray-400">
-                                                ${device.creationDate?datetime.iso?string.medium}
-                                            </p>
+                                            <#if canEdit == true>
+                                                <input type="text" name="nickname" id="nickname" value="${device.displayName}"
+                                                       class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
+                                                       placeholder="" required="" autocomplete="off">
+                                            <#else>
+                                                <p class="text-sm font-medium text-gray-900 truncate">
+                                                    ${device.displayName}
+                                                </p>
+                                                <p class="text-sm text-gray-500 truncate">
+                                                    ${device.creationDate?datetime.iso?string.medium}
+                                                </p>
+                                            </#if>
                                         </div>
-                                        <div class="inline-flex space-x-0 items-center text-base font-semibold text-gray-900 dark:text-white">
-                                            <button type="button" name="editItemBtn"
-                                                    class="bg-gray-50 border border-gray-300 hover:bg-gray-100 font-medium rounded-lg text-sm text-center p-2 inline-flex items-center me-2 font-medium rounded-lg dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-                                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
-                                                     width="16"
-                                                     data-view-component="true"
-                                                     class="octicon octicon-pencil Button-visual">
-                                                    <path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path>
-                                                </svg>
-                                            </button>
-                                            <button type="button" name="deleteItemBtn"
-                                                    class="bg-gray-50 border border-gray-300 hover:bg-gray-100 font-medium rounded-lg text-sm text-center p-2 inline-flex items-center me-2 font-medium rounded-lg dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 fill-red-500">
-                                                <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
-                                                     width="16"
-                                                     data-view-component="true">
-                                                    <path d="M11 1.75V3h2.25a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1 0-1.5H5V1.75C5 .784 5.784 0 6.75 0h2.5C10.216 0 11 .784 11 1.75ZM4.496 6.675l.66 6.6a.25.25 0 0 0 .249.225h5.19a.25.25 0 0 0 .249-.225l.66-6.6a.75.75 0 0 1 1.492.149l-.66 6.6A1.748 1.748 0 0 1 10.595 15h-5.19a1.75 1.75 0 0 1-1.741-1.575l-.66-6.6a.75.75 0 1 1 1.492-.15ZM6.5 1.75V3h3V1.75a.25.25 0 0 0-.25-.25h-2.5a.25.25 0 0 0-.25.25Z"></path>
-                                                </svg>
-                                            </button>
+
+                                        <div class="inline-flex space-x-1 items-center text-base font-semibold text-gray-900">
+                                            <#if canEdit == true>
+                                                <button type="button" name="saveItemBtn"
+                                                        onclick="document.getElementById('deviceId').value = ${device.id?c}; document.forms[0].submit();"
+                                                        class="bg-gray-50 rounded-lg border border-gray-300 hover:bg-gray-100 font-medium text-sm text-center p-2 inline-flex items-center font-medium">
+                                                    Save
+                                                </button>
+                                                <button type="submit" name="cancelItemBtn"
+                                                        class="rounded-lg hover:bg-gray-100 text-blue-600 font-medium text-sm text-center p-2 inline-flex items-center font-medium">
+                                                    Cancel
+                                                </button>
+                                            <#else>
+                                                <button type="submit" name="editItemBtn"
+                                                        class="bg-gray-50 rounded-lg border border-gray-300 hover:bg-gray-100 font-medium text-sm text-center p-2 inline-flex items-center font-medium">
+                                                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1"
+                                                         width="16" data-view-component="true">
+                                                        <path d="M11.013 1.427a1.75 1.75 0 0 1 2.474 0l1.086 1.086a1.75 1.75 0 0 1 0 2.474l-8.61 8.61c-.21.21-.47.364-.756.445l-3.251.93a.75.75 0 0 1-.927-.928l.929-3.25c.081-.286.235-.547.445-.758l8.61-8.61Zm.176 4.823L9.75 4.81l-6.286 6.287a.253.253 0 0 0-.064.108l-.558 1.953 1.953-.558a.253.253 0 0 0 .108-.064Zm1.238-3.763a.25.25 0 0 0-.354 0L10.811 3.75l1.439 1.44 1.263-1.263a.25.25 0 0 0 0-.354Z"></path>
+                                                    </svg>
+                                                </button>
+                                            </#if>
                                         </div>
                                     </div>
                                 </li>
@@ -142,7 +151,7 @@
                     <div class="text-center">
                         <button type="submit"
                                 name="addAPasskeyBtn"
-                                class="bg-gray-50 border border-gray-300 hover:bg-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                                class="bg-gray-50 border border-gray-300 hover:bg-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
                             Add a passkey
                         </button>
                     </div>
@@ -161,10 +170,11 @@
                     <input type="hidden" id="tokenResponse" name="tokenResponse">
                     <input type="hidden" id="skipped" name="skipped">
                     <input type="hidden" id="errorMessage" name="errorMessage">
+                    <input type="hidden" id="deviceId" name="deviceId">
 
                     <#if showError == true>
                         <div id="alert-message"
-                             class="p-4 mb-4 text-red-800 border border-red-300 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400 dark:border-red-800"
+                             class="p-4 mb-4 text-red-800 border border-red-300 rounded-lg bg-red-50"
                              role="alert">
                             <div class="flex items-center">
                                 <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16"
@@ -175,7 +185,7 @@
                                 <h3 class="text-lg font-medium">${errorTitle}</h3>
                                 <button type="button"
                                         onclick="document.getElementById('alert-message').style.display = 'none'"
-                                        class="ms-auto -mx-1.5 -my-1.5 bg-red-50 text-red-500 rounded-lg focus:ring-2 focus:ring-red-400 p-1.5 hover:bg-red-200 inline-flex items-center justify-center h-8 w-8 dark:bg-gray-800 dark:text-red-400 dark:hover:bg-gray-700"
+                                        class="ms-auto -mx-1.5 -my-1.5 bg-red-50 text-red-500 rounded-lg focus:ring-2 focus:ring-red-400 p-1.5 hover:bg-red-200 inline-flex items-center justify-center h-8 w-8"
                                         data-dismiss-target="#alert-border-2" aria-label="Close">
                                     <span class="sr-only">Dismiss</span>
                                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -194,7 +204,7 @@
 
                     <div class="text-center">
                         <button type="submit" name="loginWithPasskeyBtn" formnovalidate
-                                class="bg-gray-50 border border-gray-300 hover:bg-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
+                                class="bg-gray-50 border border-gray-300 hover:bg-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
                             Sign in with a passkey
                         </button>
                     </div>
