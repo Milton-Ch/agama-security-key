@@ -40,9 +40,10 @@
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "obj.fidoDevice"
-				}
+				},
+				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 2564.95538382441,
 				"y": 915.9972759293865
@@ -113,7 +114,7 @@
 			"id": "Agama-call-Node-668d617c-b558-4979-b8ad-625daac60b17",
 			"position": {
 				"x": 2110.289956450588,
-				"y": 709.9410023366776
+				"y": 708.9410023366776
 			},
 			"type": "call",
 			"data": {
@@ -125,7 +126,7 @@
 				"inIterateBlock": false,
 				"position": {
 					"x": 2110.289956450588,
-					"y": 709.9410023366776
+					"y": 708.9410023366776
 				},
 				"agamaData": {
 					"id": "Agama-call-Node-668d617c-b558-4979-b8ad-625daac60b17",
@@ -136,7 +137,7 @@
 					"comment": "",
 					"javaClassName": "",
 					"javaMethodName": "updateDevice",
-					"javaVariableName": "scimFidoHelper",
+					"javaVariableName": "scimFido2Helper",
 					"exceptionVariableField": "E",
 					"callType": "Call method on instance",
 					"whenCondition": "WhenFalse",
@@ -155,7 +156,7 @@
 			"selected": false,
 			"positionAbsolute": {
 				"x": 2110.289956450588,
-				"y": 709.9410023366776
+				"y": 708.9410023366776
 			},
 			"dragging": false
 		},
@@ -1789,7 +1790,8 @@
 				"handles": [
 					"Agama-when-Node-7da83847-0a02-4f3b-8368-8bd94429600e.FAILURE",
 					"Agama-when-Node-7da83847-0a02-4f3b-8368-8bd94429600e.SUCCESS"
-				]
+				],
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -2479,8 +2481,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1886.10962799234,
-		"y": -571.0440626262044,
-		"zoom": 0.8235910172675744
+		"x": -1645,
+		"y": -428,
+		"zoom": 1
 	}
 }
