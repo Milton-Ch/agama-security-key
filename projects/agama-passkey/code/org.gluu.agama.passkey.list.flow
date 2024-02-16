@@ -13,7 +13,7 @@ Repeat 50 times max
           obj.canEdit = false
           obj.isAssertion = false
           obj.showError = false
-          nickNamed | E = Call scimFidoHelper updateDevice inum listForm.deviceId listForm.nickname
+          nickNamed | E = Call scimFido2Helper updateDevice inum listForm.deviceId listForm.nickname
           When E is null
                obj.fidoDevice = Call scimFido2Helper getFidoDeviceByUser inum
           When E is not null
@@ -52,7 +52,7 @@ Repeat 50 times max
                obj.errorMessage = E.message
                obj.isAssertion = false
           When E is null
-               it_ovbwi = {success:true, data: { userId: inum }}
-               Finish it_ovbwi
-it_ercfe = {success:false, error: "Passkey registration attempt exceeded"}
-Finish it_ercfe
+               it_epblz = {success:true, data: { userId: inum }}
+               Finish it_epblz
+it_jqsex = {success:false, error: "Passkey registration attempt exceeded"}
+Finish it_jqsex
