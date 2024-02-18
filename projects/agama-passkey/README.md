@@ -74,7 +74,7 @@ Follow the steps below:
 
 ### Configure Jans Scim
 
-- Once we have deployed the `agama project`, we need to configure the `jans scim` parameters, then we proceed to create a new user `jans scim` with scope `https://jans.io/scim/fido2.read`.
+- Once we have deployed the `agama project`, we need to configure the `jans scim` parameters, then we proceed to create a new user `jans scim` with scope `https://jans.io/scim/fido2.read` and `https://jans.io/scim/fido2.write`.
 - Now that we have the jans scim client, we proceed to configure this client using TUI.
 - We open TUI and we are located in agama, we select in the table where our application is deployed and press `c`, this will open a configuration panel, where we must first hit `Export Sample Config` and save the file in some path.
 - Now we go to the exported file and edit it and enter the credentials
