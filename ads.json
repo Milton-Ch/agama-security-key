@@ -70,7 +70,6 @@
         "configs": {
             "org.gluu.agama.passkey.main": {},
             "org.gluu.agama.passkey.add": {},
-            "gluu.agama.passkey.list": {},
             "org.gluu.agama.passkey.nickname": {}
         },
         "name": "agama-supergluu"
