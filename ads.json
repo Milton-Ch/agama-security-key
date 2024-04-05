@@ -67,6 +67,9 @@
             "super-gluu"
         ],
         "noDirectLaunch": [],
-        "configs": {}
+        "configs": {
+            "org.gluu.agama.passkey.main": {}
+        },
+        "name": "agama-supergluu"
     }
 }
