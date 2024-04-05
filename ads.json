@@ -67,7 +67,9 @@
             "super-gluu"
         ],
         "noDirectLaunch": [],
-        "configs": {},
+        "configs": {
+            "org.gluu.agama.supergluu.nickname": {}
+        },
         "name": "agama-supergluu"
     }
 }
