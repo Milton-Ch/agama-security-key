@@ -51,5 +51,22 @@
             }
         },
         "name": "agama-passkey"
+    },
+    "agana-suergluu": {
+        "projectName": "agana-suergluu",
+        "description": "Agama SuperGluu",
+        "type": "community",
+        "author": "Milton-Ch",
+        "version": "0.0.1",
+        "authorWebsite": "https://github.com/Milton-Ch/agama-lab-projects",
+        "githubUri": "https://github.com/Milton-Ch/agama-lab-projects",
+        "license": "apache-2.0",
+        "lastUpdated": "1712284388625",
+        "tags": [
+            "super-gluu",
+            "fido"
+        ],
+        "noDirectLaunch": [],
+        "configs": {}
     }
 }
