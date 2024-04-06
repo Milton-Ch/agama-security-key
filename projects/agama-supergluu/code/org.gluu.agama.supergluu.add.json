@@ -34,9 +34,10 @@
 					"finishMode": "withVariable",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Finish with trigger"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2248.005448478463,
@@ -81,10 +82,12 @@
 						"scimSetting"
 					],
 					"asssignedVariableName": "nicknameTrigger",
-					"exceptionVariableField": ""
-				}
+					"exceptionVariableField": "",
+					"nodeColor": "#80deea"
+				},
+				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 2048.005448478463,
 				"y": 28.952625820651548
@@ -888,8 +891,8 @@
 		}
 	],
 	"viewport": {
-		"x": -424.3366923420158,
-		"y": 118.51963541351506,
+		"x": -1267.3366923420158,
+		"y": 131.51963541351506,
 		"zoom": 0.8705505632961249
 	}
 }
