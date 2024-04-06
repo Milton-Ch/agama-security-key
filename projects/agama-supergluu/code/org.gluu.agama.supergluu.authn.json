@@ -40,9 +40,10 @@
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "qrRequest"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 830,
@@ -233,6 +234,99 @@
 				"x": 30,
 				"y": 29.0440298346561
 			}
+		},
+		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-log-Node-25711738-923b-46fa-b2a6-dd2da89cc4ce",
+			"position": {
+				"x": 1030,
+				"y": 29.0440298346561
+			},
+			"type": "log",
+			"data": {
+				"id": "Agama-log-Node-25711738-923b-46fa-b2a6-dd2da89cc4ce",
+				"type": "Agama-log-Node",
+				"parentId": "Agama-call-Node-9856a504-1fd2-4189-a5d0-57badf818a3f",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 1030,
+					"y": 29.0440298346561
+				},
+				"agamaData": {
+					"id": "Agama-log-Node-25711738-923b-46fa-b2a6-dd2da89cc4ce",
+					"parentId": "Agama-call-Node-9856a504-1fd2-4189-a5d0-57badf818a3f",
+					"type": "Agama-log-Node",
+					"displayName": "Log mobile notification",
+					"hasComment": true,
+					"comment": "Startup log for mobile notification",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"logMessage": "\"Sending mobile notification to user's registered Super Gluu devices \"",
+					"logLevel": "debug",
+					"nodeIcon": "octicon:log-16"
+				}
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 1030,
+				"y": 29.0440298346561
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-call-Node-c9c82a17-4a46-409b-8dc1-3a595b1eb3de",
+			"position": {
+				"x": 1235.5181466394276,
+				"y": 29.0440298346561
+			},
+			"type": "call",
+			"data": {
+				"id": "Agama-call-Node-c9c82a17-4a46-409b-8dc1-3a595b1eb3de",
+				"type": "Agama-call-Node",
+				"parentId": "Agama-log-Node-25711738-923b-46fa-b2a6-dd2da89cc4ce",
+				"whenCondition": "",
+				"inRepeatBlock": "",
+				"inIterateBlock": "",
+				"position": {
+					"x": 1235.5181466394276,
+					"y": 29.0440298346561
+				},
+				"agamaData": {
+					"id": "Agama-call-Node-c9c82a17-4a46-409b-8dc1-3a595b1eb3de",
+					"parentId": "Agama-call-Node-9856a504-1fd2-4189-a5d0-57badf818a3f",
+					"type": "Agama-call-Node",
+					"displayName": "SGNotificationsUtil instance",
+					"hasComment": true,
+					"comment": "Get instance SGNotificationsUtil",
+					"javaClassName": "org.gluu.agama.supergluu.notify.SGNotificationsUtil",
+					"javaMethodName": "getInstance",
+					"javaVariableName": "",
+					"exceptionVariableField": "",
+					"callType": "Call static method",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"arguments": [],
+					"nodeIcon": "material-symbols:code",
+					"asssignedVariableName": "realCrap"
+				}
+			},
+			"selected": true,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 1235.5181466394276,
+				"y": 29.0440298346561
+			},
+			"parentId": "Agama-log-Node-25711738-923b-46fa-b2a6-dd2da89cc4ce",
+			"whenCondition": "",
+			"inRepeatBlock": "",
+			"inIterateBlock": ""
 		}
 	],
 	"edges": [
@@ -303,11 +397,45 @@
 				"color": "#ffffff",
 				"fillOpacity": 0.7
 			}
+		},
+		{
+			"id": "Agama-call-Node-9856a504-1fd2-4189-a5d0-57badf818a3f-Agama-log-Node-25711738-923b-46fa-b2a6-dd2da89cc4ce-9b7ffb46-d5b7-43f4-ba99-26538220aedb",
+			"type": "default",
+			"source": "Agama-call-Node-9856a504-1fd2-4189-a5d0-57badf818a3f",
+			"target": "Agama-log-Node-25711738-923b-46fa-b2a6-dd2da89cc4ce",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#bee0d2",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			}
+		},
+		{
+			"id": "Agama-log-Node-25711738-923b-46fa-b2a6-dd2da89cc4ce-Agama-call-Node-c9c82a17-4a46-409b-8dc1-3a595b1eb3de-d83e67ca-9fa8-4b5d-a96a-db614b6ab54c",
+			"type": "default",
+			"source": "Agama-log-Node-25711738-923b-46fa-b2a6-dd2da89cc4ce",
+			"target": "Agama-call-Node-c9c82a17-4a46-409b-8dc1-3a595b1eb3de",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#bee0d2",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			}
 		}
 	],
 	"viewport": {
-		"x": -338.01888014642145,
-		"y": 40.72281978747765,
+		"x": -1257.018880146422,
+		"y": 82.72281978747765,
 		"zoom": 1.4589824211184292
 	}
 }
