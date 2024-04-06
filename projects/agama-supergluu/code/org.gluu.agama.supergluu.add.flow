@@ -9,5 +9,5 @@ Log "@debug Add a super gluu flow is started"
 obj = RRF "pre-enrollment.ftlh" 
 When 
 // Finish with cancellation event
-it_twcfx = {success:false, error: "Pre-enrollment cancellation"}
-Finish it_twcfx
+it_znjdo = {success:false, error: "Preenrollment cancellation"}
+Finish it_znjdo
