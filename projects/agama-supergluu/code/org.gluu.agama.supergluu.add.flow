@@ -9,17 +9,12 @@ Log "@debug Add a super gluu flow is started"
 obj = RRF "pre-enrollment.ftlh" 
 When obj.cancelBtn is ""
      // Finish with cancellation event
-     it_xnfsr = {success:false, error: "Pre enrollment cancellation"}
-     Finish it_xnfsr
+     it_caiou = {success:false, error: "Pre enrollment cancellation"}
+     Finish it_caiou
 // Set inum = userData.inum
 inum = userData.inum
-// Get instance ScimFido2Helper
-scimFido2Helper = Call org.gluu.agama.supergluu.ScimFido2Helper#new scimSetting
-// List super gluu device by user
-fidoDevice = Call scimFido2Helper getFidoDeviceByUser inum
-// obj initialization
-obj = { fidoDevice: fidoDevice, showError: false, errorTitle: "", errorMessage: "", canEdit: false }
-Repeat 5 times max
-     // Load list.ftlh page and pass obj
-     listForm = RRF "list.ftlh" obj
-     Log "@debug listForm response %" listForm
+// Get instance SGValidator
+sgEnroller = Call org.gluu.agama.supergluu.SGValidator#new scimSetting
+// Generate enrollment request
+req = Call scimSetting QRRequest null
+Log "@debug Enrollment request generated %" req
