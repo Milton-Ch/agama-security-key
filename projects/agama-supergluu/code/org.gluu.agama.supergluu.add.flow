@@ -9,5 +9,5 @@ Log "@debug Add a super gluu flow is started"
 obj = RRF "pre-enrollment.ftlh" 
 When obj.cancelBtn is ""
 // Finish with cancellation event
-it_xpwul = {success:false, error: "Preenrollment cancellation"}
-Finish it_xpwul
+it_mseiv = {success:false, error: "Pre enrollment cancellation"}
+Finish it_mseiv
