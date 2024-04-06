@@ -1,2 +1,15 @@
+// This flow is responsible for setting a nickname for the super gluu device that completes the enrollment
 Flow org.gluu.agama.supergluu.nickname
      Basepath ""
+     Configs deviceId userData scimSetting
+// Mark startup logs
+Log "@debug Nickname flow started"
+// set inum = userData.inum
+inum = userData.inum
+// Load nickname.ftlh page
+nicknameForm = RRF "nickname.ftlh" 
+// Get instance FidoEnroller
+fidoEnroller = Call org.gluu.agama.passkey.enroll.FidoEnroller#new 
+// Call method to save the entered nickname
+nickNamed = Call fidoEnroller nameIt inum nicknameForm.nickname key
+When 
