@@ -1,6 +1,31 @@
 {
 	"nodes": [
 		{
+			"width": 270,
+			"height": 55,
+			"id": "Agama-note-9acd75b7-66cc-4910-b063-0c33be9a70d9",
+			"position": {
+				"x": 1396.5032391518134,
+				"y": -29.564262646496275
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-9acd75b7-66cc-4910-b063-0c33be9a70d9",
+				"type": "Agama-note",
+				"notes": "If saved the nickname is success, it completes success, otherwise I get an error",
+				"position": {
+					"x": 1396.5032391518134,
+					"y": -29.564262646496275
+				}
+			},
+			"selected": true,
+			"positionAbsolute": {
+				"x": 1396.5032391518134,
+				"y": -29.564262646496275
+			},
+			"dragging": false
+		},
+		{
 			"width": 170,
 			"height": 124,
 			"id": "finish-f37a4f43-4962-499c-b2fe-eb47826eb3cb",
@@ -38,9 +63,10 @@
 					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Success saved"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1657.4796325378138,
@@ -653,8 +679,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1331.4068385390792,
-		"y": 116.41337731115777,
-		"zoom": 1.2141948843950474
+		"x": 231.3403448096899,
+		"y": 43.987297801148884,
+		"zoom": 0.5285090202806904
 	}
 }
