@@ -1,2 +1,7 @@
+// This flow handles the registration of a new super gluu device
 Flow org.gluu.agama.supergluu.add
      Basepath ""
+     Configs conf
+     Inputs userData scimSetting
+// Mark startup logs
+Log "@debug Add a super gluu flow is started"
