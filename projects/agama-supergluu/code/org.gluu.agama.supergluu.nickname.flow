@@ -15,3 +15,7 @@ Log "@debug Nickname form response %" nicknameForm
 sgEnroller = Call org.gluu.agama.supergluu.SGValidator#new 
 // Call method to save the entered nickname
 attached = Call sgEnroller attach inum deviceId nicknameForm.nickname
+When attached is false
+     // Ends with an error if the user failed to associate the super gluu device
+     it_gexrq = {success:false, error: "Enrolled device couldn't be attached to user profile"}
+     Finish it_gexrq
