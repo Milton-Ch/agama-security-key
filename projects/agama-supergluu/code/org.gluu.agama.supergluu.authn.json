@@ -37,7 +37,8 @@
 					"returnVariable": "{ userId: inum }",
 					"finishMode": "withSuccess",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
-				}
+				},
+				"skake": false
 			},
 			"selected": true,
 			"dragging": false,
@@ -83,7 +84,8 @@
 					"returnVariable": "error",
 					"finishMode": "withVariable",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -131,7 +133,8 @@
 				"handles": [
 					"Agama-when-Node-5bab5479-e880-4716-af23-2c54aa5786b1.FAILURE",
 					"Agama-when-Node-5bab5479-e880-4716-af23-2c54aa5786b1.SUCCESS"
-				]
+				],
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -180,7 +183,8 @@
 					],
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "error"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -224,7 +228,8 @@
 					"templatePath": "enrollment.ftlh",
 					"asssignedVariableName": "data",
 					"arguments": "obj"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -271,7 +276,8 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -319,7 +325,8 @@
 				"handles": [
 					"Agama-when-Node-060b41b6-49f7-4a92-aa94-8946dde6d4cb.FAILURE",
 					"Agama-when-Node-060b41b6-49f7-4a92-aa94-8946dde6d4cb.SUCCESS"
-				]
+				],
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -363,7 +370,8 @@
 					"templatePath": "pre-enrollment.ftlh",
 					"asssignedVariableName": "data",
 					"arguments": "obj"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -420,7 +428,8 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -1311,8 +1320,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1764.706878481802,
-		"y": 146.50397438139174,
+		"x": -1741.706878481802,
+		"y": 47.50397438139174,
 		"zoom": 0.8857444960721486
 	}
 }
