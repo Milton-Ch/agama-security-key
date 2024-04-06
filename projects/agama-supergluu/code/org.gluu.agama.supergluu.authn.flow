@@ -17,6 +17,7 @@ Log "@debug Sending mobile notification to user's registered Super Gluu devices 
 realCrap = Call org.gluu.agama.supergluu.notify.SGNotificationsUtil#getInstance 
 // Send mobile notification
 aux | E = Call realCrap send inum sgValidator.appId qrRequest
+// If there is an error sending the notification
 When E is not null
      // Mark log when error
      Log "@error " E
