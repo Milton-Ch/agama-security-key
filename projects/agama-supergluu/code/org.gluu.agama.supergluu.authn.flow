@@ -1,2 +1,6 @@
+// This flow is responsible for authenticating with super gluu
 Flow org.gluu.agama.supergluu.authn
      Basepath ""
+     Configs conf
+     Inputs userData scimSetting
+Log "@debug Authentication flow is started"
