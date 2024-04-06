@@ -9,3 +9,5 @@ Log "@debug Authentication flow is started"
 inum = userData.inum
 // Get instance SGValidator
 sgValidator = Call org.gluu.agama.supergluu.SGValidator#new 
+// Generates assertion request for validation
+qrRequest = Call userData QRRequest "authenticate"
