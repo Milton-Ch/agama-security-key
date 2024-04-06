@@ -15,3 +15,10 @@ qrRequest = Call userData QRRequest "authenticate"
 Log "@debug Sending mobile notification to user's registered Super Gluu devices "
 // Get instance SGNotificationsUtil
 realCrap = Call org.gluu.agama.supergluu.notify.SGNotificationsUtil#getInstance 
+// Send mobile notification
+ | E = Call realCrap send inum sgValidator.appId qrRequest
+When E is not null
+     // Mark log when error
+     Log "@error " E
+     // Set E = null
+     E = null
