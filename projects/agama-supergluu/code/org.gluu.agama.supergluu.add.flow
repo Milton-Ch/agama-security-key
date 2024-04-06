@@ -9,8 +9,8 @@ Log "@debug Add a super gluu flow is started"
 obj = RRF "pre-enrollment.ftlh" 
 When obj.cancelBtn is ""
      // Finish with cancellation event
-     it_caiou = {success:false, error: "Pre enrollment cancellation"}
-     Finish it_caiou
+     it_ouucf = {success:false, error: "Pre enrollment cancellation"}
+     Finish it_ouucf
 // Set inum = userData.inum
 inum = userData.inum
 // Get instance SGValidator
@@ -18,3 +18,8 @@ sgEnroller = Call org.gluu.agama.supergluu.SGValidator#new scimSetting
 // Generate enrollment request
 req = Call scimSetting QRRequest null
 Log "@debug Enrollment request generated %" req
+// Set dn = data.first
+dn = data.first
+When dn is null
+     it_clxys = {success:false, error: "data.second"}
+     Finish it_clxys
