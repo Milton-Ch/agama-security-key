@@ -3,6 +3,48 @@
 		{
 			"width": 170,
 			"height": 124,
+			"id": "Agama-log-Node-a68bb386-552f-4199-a67d-7e2487b552c9",
+			"position": {
+				"x": 229.17640898273237,
+				"y": 30
+			},
+			"type": "log",
+			"data": {
+				"id": "Agama-log-Node-a68bb386-552f-4199-a67d-7e2487b552c9",
+				"type": "Agama-log-Node",
+				"parentId": "Agama-start-Flow-c369c374-9629-4ea1-926e-a261bd5ba60d",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 229.17640898273237,
+					"y": 30
+				},
+				"agamaData": {
+					"id": "Agama-log-Node-a68bb386-552f-4199-a67d-7e2487b552c9",
+					"parentId": "Agama-start-Flow-c369c374-9629-4ea1-926e-a261bd5ba60d",
+					"type": "Agama-log-Node",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "Mark startup logs",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"logMessage": "\"Add a super gluu flow is started\"",
+					"logLevel": "debug",
+					"nodeIcon": "octicon:log-16"
+				}
+			},
+			"selected": true,
+			"positionAbsolute": {
+				"x": 229.17640898273237,
+				"y": 30
+			},
+			"dragging": false
+		},
+		{
+			"width": 168,
+			"height": 120,
 			"id": "Agama-start-Flow-c369c374-9629-4ea1-926e-a261bd5ba60d",
 			"type": "start",
 			"sourcePosition": "right",
@@ -10,7 +52,7 @@
 				"id": "Agama-start-Flow-c369c374-9629-4ea1-926e-a261bd5ba60d",
 				"type": "Agama-start-Flow",
 				"position": {
-					"x": 30,
+					"x": 30.823591017267574,
 					"y": 30
 				},
 				"inRepeatBlock": false,
@@ -19,32 +61,56 @@
 					"type": "Agama-start-Flow",
 					"displayName": "AddFlow",
 					"hasComment": true,
-					"comment": "",
+					"comment": "This flow handles the registration of a new super gluu device",
 					"isTopLevelFlow": true,
 					"basepath": "",
 					"configParams": "{}",
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
-					"inputs": "",
-					"configs": "",
-					"flowname": "org.gluu.agama.supergluu.add"
+					"inputs": "userData scimSetting",
+					"configs": "conf",
+					"flowname": "org.gluu.agama.supergluu.add",
+					"hasSuccess": "",
+					"hasFailure": "",
+					"hasNoRepeat": false,
+					"hasRepeat": false
 				},
-				"skake": false
+				"skake": true
 			},
 			"position": {
-				"x": 30,
+				"x": 30.823591017267574,
 				"y": 30
 			},
 			"positionAbsolute": {
-				"x": 30,
+				"x": 30.823591017267574,
 				"y": 30
+			},
+			"selected": false,
+			"dragging": false
+		}
+	],
+	"edges": [
+		{
+			"id": "Agama-start-Flow-c369c374-9629-4ea1-926e-a261bd5ba60d-Agama-log-Node-a68bb386-552f-4199-a67d-7e2487b552c9-69da5cf1-eddb-4ad5-8ebf-226fc54b39a4",
+			"type": "default",
+			"source": "Agama-start-Flow-c369c374-9629-4ea1-926e-a261bd5ba60d",
+			"target": "Agama-log-Node-a68bb386-552f-4199-a67d-7e2487b552c9",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#bee0d2",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
 			}
 		}
 	],
-	"edges": [],
 	"viewport": {
-		"x": 244,
-		"y": 218,
-		"zoom": 0.75
+		"x": 317.8579419938035,
+		"y": 48.702730383856476,
+		"zoom": 1.214194884395047
 	}
 }
