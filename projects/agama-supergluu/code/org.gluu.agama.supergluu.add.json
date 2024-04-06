@@ -1,6 +1,56 @@
 {
 	"nodes": [
 		{
+			"width": 270,
+			"height": 55,
+			"id": "Agama-note-7ffb3125-928c-4e9b-857c-e618d57977f0",
+			"position": {
+				"x": 1791.4994456369443,
+				"y": -34.1334831011163
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-7ffb3125-928c-4e9b-857c-e618d57977f0",
+				"type": "Agama-note",
+				"notes": "If \"dn\" is not null, it is because the registration has been completed",
+				"position": {
+					"x": 1791.4994456369443,
+					"y": -34.1334831011163
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 1791.4994456369443,
+				"y": -34.1334831011163
+			},
+			"dragging": false
+		},
+		{
+			"width": 270,
+			"height": 42,
+			"id": "Agama-note-a5438dac-d0c8-46ec-8b8e-046543522ad5",
+			"position": {
+				"x": 577.1238797874288,
+				"y": -19.278242004276592
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-a5438dac-d0c8-46ec-8b8e-046543522ad5",
+				"type": "Agama-note",
+				"notes": "if the client decides to cancel to the flow",
+				"position": {
+					"x": 577.1238797874288,
+					"y": -19.278242004276592
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 577.1238797874288,
+				"y": -19.278242004276592
+			},
+			"dragging": false
+		},
+		{
 			"width": 170,
 			"height": 124,
 			"id": "finish-a0917f75-9e7f-4482-bc0a-3fc493b5a01c",
@@ -149,7 +199,7 @@
 			"id": "Agama-when-Node-08420733-adc8-4e7e-a1f1-3db6cd0b891d",
 			"position": {
 				"x": 1848.005448478463,
-				"y": 84.34736948700197
+				"y": 83.76700244480455
 			},
 			"parentId": "Agama-assignment-Node-7b79e2e1-5a2e-4a0b-8642-6ed7d2ee1653",
 			"type": "when",
@@ -162,7 +212,7 @@
 				"inIterateBlock": false,
 				"position": {
 					"x": 1848.005448478463,
-					"y": 84.34736948700197
+					"y": 83.76700244480455
 				},
 				"agamaData": {
 					"id": "Agama-when-Node-08420733-adc8-4e7e-a1f1-3db6cd0b891d",
@@ -189,7 +239,7 @@
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1848.005448478463,
-				"y": 84.34736948700197
+				"y": 83.76700244480455
 			}
 		},
 		{
@@ -473,7 +523,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 834.8935651426981,
 				"y": 223.40498810056698
@@ -522,7 +572,7 @@
 				],
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 629.9999999999999,
@@ -891,8 +941,8 @@
 		}
 	],
 	"viewport": {
-		"x": -522.429291728375,
-		"y": -86.26942356623545,
-		"zoom": 1.23538652590136
+		"x": -1057.973779489785,
+		"y": 15.266014406377053,
+		"zoom": 0.8857444960721486
 	}
 }
