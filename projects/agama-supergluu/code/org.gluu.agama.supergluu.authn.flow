@@ -3,4 +3,9 @@ Flow org.gluu.agama.supergluu.authn
      Basepath ""
      Configs conf
      Inputs userData scimSetting
+// Mark startup logs
 Log "@debug Authentication flow is started"
+// Set inum = userData.inum
+inum = userData.inum
+// Get instance SGValidator
+sgValidator = Call org.gluu.agama.supergluu.SGValidator#new 
