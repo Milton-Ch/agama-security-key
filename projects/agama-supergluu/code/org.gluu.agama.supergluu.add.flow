@@ -7,7 +7,7 @@ Flow org.gluu.agama.supergluu.add
 Log "@debug Add a super gluu flow is started"
 // Load pre-enrollment.ftlh page
 obj = RRF "pre-enrollment.ftlh" 
-When 
+When obj.cancelBtn is ""
 // Finish with cancellation event
-it_znjdo = {success:false, error: "Preenrollment cancellation"}
-Finish it_znjdo
+it_xpwul = {success:false, error: "Preenrollment cancellation"}
+Finish it_xpwul
