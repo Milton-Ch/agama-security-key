@@ -9,5 +9,11 @@ Log "@debug Add a super gluu flow is started"
 obj = RRF "pre-enrollment.ftlh" 
 When obj.cancelBtn is ""
      // Finish with cancellation event
-     it_ondgo = {success:false, error: "Pre enrollment cancellation"}
-     Finish it_ondgo
+     it_wmwwl = {success:false, error: "Pre enrollment cancellation"}
+     Finish it_wmwwl
+// Set inum = userData.inum
+inum = userData.inum
+// Get instance ScimFido2Helper
+scimFido2Helper = Call org.gluu.agama.supergluu.ScimFido2Helper#new scimSetting
+// List super gluu device by user
+fidoDevice = Call scimFido2Helper getFidoDeviceByUser inum
