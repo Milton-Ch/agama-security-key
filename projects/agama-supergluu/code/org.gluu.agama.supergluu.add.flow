@@ -5,3 +5,9 @@ Flow org.gluu.agama.supergluu.add
      Inputs userData scimSetting
 // Mark startup logs
 Log "@debug Add a super gluu flow is started"
+// Load pre-enrollment.ftlh page
+obj = RRF "pre-enrollment.ftlh" 
+When 
+// Finish with cancellation event
+it_twcfx = {success:false, error: "Pre-enrollment cancellation"}
+Finish it_twcfx
