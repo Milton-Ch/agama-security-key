@@ -34,12 +34,13 @@
 					"hasComment": true,
 					"comment": "Finish with cancellation event",
 					"flowfilename": "",
-					"returnVariable": "Pre-enrollment cancellation",
+					"returnVariable": "Preenrollment cancellation",
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Flow cancellation",
 					"nodeColor": "#eb999a"
-				}
+				},
+				"skake": true
 			},
 			"selected": true,
 			"dragging": false,
@@ -78,7 +79,8 @@
 				"handles": [
 					"Agama-when-Node-36a08d5f-d60f-4d7b-b271-efde4807c3d1.FAILURE",
 					"Agama-when-Node-36a08d5f-d60f-4d7b-b271-efde4807c3d1.SUCCESS"
-				]
+				],
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -121,7 +123,8 @@
 					"nodeIcon": "ph:globe-simple",
 					"templatePath": "pre-enrollment.ftlh",
 					"asssignedVariableName": "obj"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -292,8 +295,8 @@
 		}
 	],
 	"viewport": {
-		"x": -125.14205800619652,
-		"y": 62.70273038385653,
+		"x": -265.1420580061964,
+		"y": 23.70273038385659,
 		"zoom": 1.214194884395047
 	}
 }
