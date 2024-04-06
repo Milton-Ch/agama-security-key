@@ -17,8 +17,8 @@ sgEnroller = Call org.gluu.agama.supergluu.SGValidator#new
 attached = Call sgEnroller attach inum deviceId nicknameForm.nickname
 When attached is false
      // Ends with an error if the user failed to associate the super gluu device
-     it_pymge = {success:false, error: "Enrolled device couldn't be attached to user profile"}
-     Finish it_pymge
+     it_erbpu = {success:false, error: "Enrolled device couldn't be attached to user profile"}
+     Finish it_erbpu
 // Nickname saved correctly
-it_vtfcq = {success:true, data: { userId: inum, message: "Nickname saved correctly"}}
-Finish it_vtfcq
+it_besbo = {success:true, data: { userId: inum, message: "Nickname saved correctly"}}
+Finish it_besbo
