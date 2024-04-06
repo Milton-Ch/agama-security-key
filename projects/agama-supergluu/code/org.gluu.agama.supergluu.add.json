@@ -87,7 +87,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 2048.005448478463,
 				"y": 28.952625820651548
@@ -465,7 +465,7 @@
 					"hasComment": true,
 					"comment": "Finish with cancellation event",
 					"flowfilename": "",
-					"returnVariable": "Pre enrollment cancellation",
+					"returnVariable": "Pre enrollment cancelled",
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Flow cancellation",
@@ -473,7 +473,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 834.8935651426981,
 				"y": 223.40498810056698
@@ -891,8 +891,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1267.3366923420158,
-		"y": 131.51963541351506,
-		"zoom": 0.8705505632961249
+		"x": -522.429291728375,
+		"y": -86.26942356623545,
+		"zoom": 1.23538652590136
 	}
 }
