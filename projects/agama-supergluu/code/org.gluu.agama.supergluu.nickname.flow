@@ -4,12 +4,14 @@ Flow org.gluu.agama.supergluu.nickname
      Configs deviceId userData scimSetting
 // Mark startup logs
 Log "@debug Nickname flow started"
-// set inum = userData.inum
+// inum and name declaration variable
 inum = userData.inum
+name = userData.name
 // Load nickname.ftlh page
 nicknameForm = RRF "nickname.ftlh" 
-// Get instance FidoEnroller
-fidoEnroller = Call org.gluu.agama.passkey.enroll.FidoEnroller#new 
+// Log of the form loaded response
+Log "@debug Nickname form response %" nicknameForm
+// Get instance SGValidator
+sgEnroller = Call org.gluu.agama.supergluu.SGValidator#new 
 // Call method to save the entered nickname
-nickNamed = Call fidoEnroller nameIt inum nicknameForm.nickname key
-When 
+attached = Call sgEnroller attach inum deviceId nicknameForm.nickname
