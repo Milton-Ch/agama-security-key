@@ -3,6 +3,55 @@
 		{
 			"width": 170,
 			"height": 124,
+			"id": "Agama-call-Node-9856a504-1fd2-4189-a5d0-57badf818a3f",
+			"position": {
+				"x": 830,
+				"y": 29.0440298346561
+			},
+			"type": "call",
+			"data": {
+				"id": "Agama-call-Node-9856a504-1fd2-4189-a5d0-57badf818a3f",
+				"type": "Agama-call-Node",
+				"parentId": "Agama-call-Node-d681e7a4-627b-4836-a781-8d2fea933197",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 830,
+					"y": 29.0440298346561
+				},
+				"agamaData": {
+					"id": "Agama-call-Node-9856a504-1fd2-4189-a5d0-57badf818a3f",
+					"parentId": "Agama-call-Node-d681e7a4-627b-4836-a781-8d2fea933197",
+					"type": "Agama-call-Node",
+					"displayName": "Validation request",
+					"hasComment": true,
+					"comment": "Generates assertion request for validation",
+					"javaClassName": "",
+					"javaMethodName": "QRRequest",
+					"javaVariableName": "userData",
+					"exceptionVariableField": "",
+					"callType": "Call method on instance",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"arguments": [
+						"\"authenticate\""
+					],
+					"nodeIcon": "material-symbols:code",
+					"asssignedVariableName": "qrRequest"
+				}
+			},
+			"selected": true,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 830,
+				"y": 29.0440298346561
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
 			"id": "Agama-call-Node-d681e7a4-627b-4836-a781-8d2fea933197",
 			"position": {
 				"x": 630,
@@ -37,8 +86,13 @@
 					"inIterateBlock": false,
 					"arguments": [],
 					"nodeIcon": "material-symbols:code",
-					"asssignedVariableName": "sgValidator"
-				}
+					"asssignedVariableName": "sgValidator",
+					"hasSuccess": "",
+					"hasFailure": "",
+					"hasNoRepeat": false,
+					"hasRepeat": false
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -85,7 +139,8 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -231,11 +286,28 @@
 				"color": "#ffffff",
 				"fillOpacity": 0.7
 			}
+		},
+		{
+			"id": "Agama-call-Node-d681e7a4-627b-4836-a781-8d2fea933197-Agama-call-Node-9856a504-1fd2-4189-a5d0-57badf818a3f-f25f71c8-3462-44d6-8577-498eaacb32d3",
+			"type": "default",
+			"source": "Agama-call-Node-d681e7a4-627b-4836-a781-8d2fea933197",
+			"target": "Agama-call-Node-9856a504-1fd2-4189-a5d0-57badf818a3f",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#bee0d2",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			}
 		}
 	],
 	"viewport": {
-		"x": 70.8780341679576,
-		"y": 73.84049474130421,
-		"zoom": 1.0460577497628043
+		"x": -338.01888014642145,
+		"y": 40.72281978747765,
+		"zoom": 1.4589824211184292
 	}
 }
