@@ -1,6 +1,31 @@
 {
 	"nodes": [
 		{
+			"width": 270,
+			"height": 42,
+			"id": "Agama-note-500be629-ac92-426e-b4f4-bee3f363f08d",
+			"position": {
+				"x": 1570.666666666666,
+				"y": -22.916666666666515
+			},
+			"type": "notes",
+			"data": {
+				"id": "Agama-note-500be629-ac92-426e-b4f4-bee3f363f08d",
+				"type": "Agama-note",
+				"notes": "If there is an error sending the notification",
+				"position": {
+					"x": 1570.666666666666,
+					"y": -22.916666666666515
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 1570.666666666666,
+				"y": -22.916666666666515
+			},
+			"dragging": false
+		},
+		{
 			"width": 170,
 			"height": 124,
 			"id": "Agama-assignment-Node-40280922-e75b-4695-be97-96bf27a3acf9",
@@ -41,7 +66,7 @@
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1963.8569329408936,
@@ -97,7 +122,7 @@
 			"id": "Agama-when-Node-9ec9739a-ac69-4330-b6a9-67a68892ec92",
 			"position": {
 				"x": 1633.4619189861155,
-				"y": 86.18993765694898
+				"y": 85.50452843917827
 			},
 			"parentId": "Agama-call-Node-4c422727-b606-40ba-84b5-680811cfcd0b",
 			"type": "when",
@@ -110,7 +135,7 @@
 				"inIterateBlock": false,
 				"position": {
 					"x": 1633.4619189861155,
-					"y": 86.18993765694898
+					"y": 85.50452843917827
 				},
 				"agamaData": {
 					"id": "Agama-when-Node-9ec9739a-ac69-4330-b6a9-67a68892ec92",
@@ -124,6 +149,7 @@
 							"combinator": "none"
 						}
 					],
+					"comment": "If there is an error sending the notification",
 					"hasComment": true,
 					"inRepeatBlock": false
 				},
@@ -137,7 +163,7 @@
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1633.4619189861155,
-				"y": 86.18993765694898
+				"y": 85.50452843917827
 			}
 		},
 		{
@@ -183,9 +209,9 @@
 					"nodeIcon": "material-symbols:code",
 					"asssignedVariableName": "aux"
 				},
-				"skake": true
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 1435.5181466394276,
 				"y": 28.35862061688539
@@ -697,8 +723,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1782.018880146422,
-		"y": 56.72281978747765,
-		"zoom": 1.4589824211184292
+		"x": -2596.4797609839466,
+		"y": -207.6092459591157,
+		"zoom": 1.7230475324955543
 	}
 }
