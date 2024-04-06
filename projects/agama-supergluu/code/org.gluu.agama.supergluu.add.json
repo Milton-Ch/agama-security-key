@@ -1,54 +1,6 @@
 {
 	"nodes": [
 		{
-			"width": 170,
-			"height": 124,
-			"id": "finish-0590785b-5a2a-49cd-8779-1be33857850b",
-			"position": {
-				"x": 827.5292269481973,
-				"y": 30.823591017267574
-			},
-			"type": "finish",
-			"data": {
-				"id": "finish-0590785b-5a2a-49cd-8779-1be33857850b",
-				"type": "Agama-finish-Flow",
-				"parentId": "Agama-when-Node-36a08d5f-d60f-4d7b-b271-efde4807c3d1",
-				"whenCondition": "WhenFalse",
-				"inRepeatBlock": false,
-				"inIterateBlock": false,
-				"handles": [
-					"Agama-when-Node-36a08d5f-d60f-4d7b-b271-efde4807c3d1.FAILURE",
-					"Agama-when-Node-36a08d5f-d60f-4d7b-b271-efde4807c3d1.SUCCESS",
-					"Agama-when-Node-36a08d5f-d60f-4d7b-b271-efde4807c3d1.OTHERWISE"
-				],
-				"position": {
-					"x": 827.5292269481973,
-					"y": 30.823591017267574
-				},
-				"agamaData": {
-					"id": "finish-0590785b-5a2a-49cd-8779-1be33857850b",
-					"parentId": "Agama-when-Node-36a08d5f-d60f-4d7b-b271-efde4807c3d1",
-					"type": "Agama-finish-Flow",
-					"hasSuccess": false,
-					"hasFailure": false,
-					"hasComment": true,
-					"comment": "Finish with cancellation event",
-					"flowfilename": "",
-					"returnVariable": "Pre enrollment cancellation",
-					"finishMode": "withFailure",
-					"nodeIcon": "material-symbols:line-end-square-rounded",
-					"displayName": "Flow cancellation",
-					"nodeColor": "#eb999a"
-				}
-			},
-			"selected": true,
-			"positionAbsolute": {
-				"x": 827.5292269481973,
-				"y": 30.823591017267574
-			},
-			"dragging": false
-		},
-		{
 			"width": 110,
 			"height": 60,
 			"id": "Agama-when-Node-36a08d5f-d60f-4d7b-b271-efde4807c3d1",
@@ -282,29 +234,11 @@
 				"color": "#ffffff",
 				"fillOpacity": 0.7
 			}
-		},
-		{
-			"id": "Agama-when-Node-36a08d5f-d60f-4d7b-b271-efde4807c3d1-finish-0590785b-5a2a-49cd-8779-1be33857850b-6937b2f6-941a-4835-a537-c7b066074c20",
-			"type": "default",
-			"source": "Agama-when-Node-36a08d5f-d60f-4d7b-b271-efde4807c3d1",
-			"target": "finish-0590785b-5a2a-49cd-8779-1be33857850b",
-			"label": "",
-			"labelBgPadding": [
-				8,
-				4
-			],
-			"labelBgBorderRadius": 4,
-			"labelBgStyle": {
-				"fill": "#bee0d2",
-				"color": "#ffffff",
-				"fillOpacity": 0.7
-			},
-			"sourceHandle": "Agama-when-Node-36a08d5f-d60f-4d7b-b271-efde4807c3d1.FAILURE"
 		}
 	],
 	"viewport": {
-		"x": -265.1420580061963,
-		"y": 24.70273038385659,
+		"x": -253.1420580061963,
+		"y": 95.70273038385659,
 		"zoom": 1.214194884395047
 	}
 }
