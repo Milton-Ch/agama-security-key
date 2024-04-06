@@ -1,35 +1,112 @@
-[
-  {
-    "id": "Agama-start-Flow-18c04bd9-1ee1-4135-a398-49d1a8a8b32c",
-    "type": "start",
-    "sourcePosition": "right",
-    "data": {
-      "id": "Agama-start-Flow-18c04bd9-1ee1-4135-a398-49d1a8a8b32c",
-      "type": "Agama-start-Flow",
-      "position": {
-        "x": 30,
-        "y": 30
-      },
-      "inRepeatBlock": false,
-      "agamaData": {
-        "id": "Agama-start-Flow-18c04bd9-1ee1-4135-a398-49d1a8a8b32c",
-        "type": "Agama-start-Flow",
-        "displayName": "AuthenticationFlow",
-        "hasComment": true,
-        "comment": "",
-        "isTopLevelFlow": true,
-        "basepath": "",
-        "configParams": "{}",
-        "nodeIcon": "material-symbols:line-start-square",
-        "timeout": "",
-        "inputs": "",
-        "configs": "",
-        "flowname": "org.gluu.agama.supergluu.authn"
-      }
-    },
-    "position": {
-      "x": 30,
-      "y": 30
-    }
-  }
-]
+{
+	"nodes": [
+		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-log-Node-f18e352b-6470-4544-a0a5-920e2b20796f",
+			"position": {
+				"x": 230,
+				"y": 29.0440298346561
+			},
+			"type": "log",
+			"data": {
+				"id": "Agama-log-Node-f18e352b-6470-4544-a0a5-920e2b20796f",
+				"type": "Agama-log-Node",
+				"parentId": "Agama-start-Flow-18c04bd9-1ee1-4135-a398-49d1a8a8b32c",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 230,
+					"y": 29.0440298346561
+				},
+				"agamaData": {
+					"id": "Agama-log-Node-f18e352b-6470-4544-a0a5-920e2b20796f",
+					"parentId": "Agama-start-Flow-18c04bd9-1ee1-4135-a398-49d1a8a8b32c",
+					"type": "Agama-log-Node",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"logMessage": "\"Authentication flow is started\"",
+					"logLevel": "debug",
+					"nodeIcon": "octicon:log-16"
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 230,
+				"y": 29.0440298346561
+			},
+			"dragging": false
+		},
+		{
+			"width": 170,
+			"height": 124,
+			"id": "Agama-start-Flow-18c04bd9-1ee1-4135-a398-49d1a8a8b32c",
+			"type": "start",
+			"sourcePosition": "right",
+			"data": {
+				"id": "Agama-start-Flow-18c04bd9-1ee1-4135-a398-49d1a8a8b32c",
+				"type": "Agama-start-Flow",
+				"position": {
+					"x": 30,
+					"y": 29.0440298346561
+				},
+				"inRepeatBlock": false,
+				"agamaData": {
+					"id": "Agama-start-Flow-18c04bd9-1ee1-4135-a398-49d1a8a8b32c",
+					"type": "Agama-start-Flow",
+					"displayName": "AuthenticationFlow",
+					"hasComment": true,
+					"comment": "This flow is responsible for authenticating with super gluu",
+					"isTopLevelFlow": true,
+					"basepath": "",
+					"configParams": "{}",
+					"nodeIcon": "material-symbols:line-start-square",
+					"timeout": "",
+					"inputs": "userData scimSetting",
+					"configs": "conf",
+					"flowname": "org.gluu.agama.supergluu.authn"
+				},
+				"skake": false
+			},
+			"position": {
+				"x": 30,
+				"y": 29.0440298346561
+			},
+			"selected": false,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 30,
+				"y": 29.0440298346561
+			}
+		}
+	],
+	"edges": [
+		{
+			"id": "Agama-start-Flow-18c04bd9-1ee1-4135-a398-49d1a8a8b32c-Agama-log-Node-f18e352b-6470-4544-a0a5-920e2b20796f-f6f65598-13c0-4476-a652-5d7865be1242",
+			"type": "default",
+			"source": "Agama-start-Flow-18c04bd9-1ee1-4135-a398-49d1a8a8b32c",
+			"target": "Agama-log-Node-f18e352b-6470-4544-a0a5-920e2b20796f",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#bee0d2",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			}
+		}
+	],
+	"viewport": {
+		"x": 226.8780341679576,
+		"y": 65.84049474130421,
+		"zoom": 1.0460577497628043
+	}
+}
