@@ -35,5 +35,5 @@ When data.continue is ""
 error = Call sgValidator validateDevice inum
 When error is not null
      Finish error
-it_yzeiq = {success:true, data: { userId: inum }}
-Finish it_yzeiq
+it_qxwku = {success:true, data: { userId: inum }}
+Finish it_qxwku
