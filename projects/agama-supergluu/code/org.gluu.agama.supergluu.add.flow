@@ -9,8 +9,8 @@ Log "@debug Add a super gluu flow is started"
 obj = RRF "pre-enrollment.ftlh" 
 When obj.cancelBtn is ""
      // Finish with cancellation event
-     it_ouucf = {success:false, error: "Pre enrollment cancellation"}
-     Finish it_ouucf
+     it_vsfwa = {success:false, error: "Pre enrollment cancellation"}
+     Finish it_vsfwa
 // Set inum = userData.inum
 inum = userData.inum
 // Get instance SGValidator
@@ -21,5 +21,9 @@ Log "@debug Enrollment request generated %" req
 // Set dn = data.first
 dn = data.first
 When dn is null
-     it_clxys = {success:false, error: "data.second"}
-     Finish it_clxys
+     it_egdlo = {success:false, error: "data.second"}
+     Finish it_egdlo
+// Flow to assign a nickname to the registered super gluu
+nicknameTrigger = Trigger org.gluu.agama.supergluu.nickname dn userData scimSetting
+// Finish with nickname trigger
+Finish nicknameTrigger
