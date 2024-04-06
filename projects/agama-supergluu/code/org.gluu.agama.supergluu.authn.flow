@@ -11,3 +11,7 @@ inum = userData.inum
 sgValidator = Call org.gluu.agama.supergluu.SGValidator#new 
 // Generates assertion request for validation
 qrRequest = Call userData QRRequest "authenticate"
+// Startup log for mobile notification
+Log "@debug Sending mobile notification to user's registered Super Gluu devices "
+// Get instance SGNotificationsUtil
+realCrap = Call org.gluu.agama.supergluu.notify.SGNotificationsUtil#getInstance 
