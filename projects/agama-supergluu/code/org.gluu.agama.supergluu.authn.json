@@ -38,9 +38,10 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 1963.8569329408936,
@@ -80,7 +81,8 @@
 					"logMessage": "E",
 					"logLevel": "error",
 					"nodeIcon": "octicon:log-16"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -128,7 +130,8 @@
 				"handles": [
 					"Agama-when-Node-9ec9739a-ac69-4330-b6a9-67a68892ec92.FAILURE",
 					"Agama-when-Node-9ec9739a-ac69-4330-b6a9-67a68892ec92.SUCCESS"
-				]
+				],
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -177,10 +180,12 @@
 						"sgValidator.appId",
 						"qrRequest"
 					],
-					"nodeIcon": "material-symbols:code"
-				}
+					"nodeIcon": "material-symbols:code",
+					"asssignedVariableName": "aux"
+				},
+				"skake": true
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 1435.5181466394276,
 				"y": 28.35862061688539
@@ -692,8 +697,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2158.018880146422,
-		"y": -69.27718021252235,
+		"x": -1782.018880146422,
+		"y": 56.72281978747765,
 		"zoom": 1.4589824211184292
 	}
 }
