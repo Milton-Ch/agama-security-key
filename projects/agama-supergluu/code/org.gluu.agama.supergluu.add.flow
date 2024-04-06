@@ -8,3 +8,6 @@ Log "@debug Add a super gluu flow is started"
 // Load pre-enrollment.ftlh page
 obj = RRF "pre-enrollment.ftlh" 
 When obj.cancelBtn is ""
+     // Finish with cancellation event
+     it_ondgo = {success:false, error: "Pre enrollment cancellation"}
+     Finish it_ondgo
