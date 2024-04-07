@@ -74,7 +74,8 @@
                 "scimClientId": "YOUR_SCIM_ID",
                 "scimClientSecret": "YOUR_SCIM_SECRET",
                 "maxLoginAttempt": 3
-            }
+            },
+            "org.gluu.agama.supergluu.list": {}
         },
         "name": "agama-supergluu"
     }
