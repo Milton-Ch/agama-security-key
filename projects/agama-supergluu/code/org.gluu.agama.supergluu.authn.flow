@@ -29,6 +29,7 @@ timeout = conf.timeout
 obj = { timeout: timeout }
 // Load authn-notification.ftlh page and pass obj
 data = RRF "pre-enrollment.ftlh" obj
+// If click "continue", we will render view
 When data.continue is ""
      // Set "obj" with request and timeout data
      obj = { request: qrRequest, timeout: timeout }
@@ -38,6 +39,8 @@ When data.continue is ""
 error = Call sgValidator validateDevice inum
 // If the validation fails, then it is terminated
 When error is not null
+     // Finish the flow with error and return the error obtained
      Finish error
-it_mvrro = {success:true, data: { userId: inum }}
-Finish it_mvrro
+// Finish the flow successfully and return user inum
+it_wdbjn = {success:true, data: { userId: inum }}
+Finish it_wdbjn
