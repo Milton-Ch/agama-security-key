@@ -42,5 +42,5 @@ When error is not null
      // Finish the flow with error and return the error obtained
      Finish error
 // Finish the flow successfully and return user inum
-it_wdbjn = {success:true, data: { userId: inum }}
-Finish it_wdbjn
+it_dgias = {success:true, data: { userId: inum }}
+Finish it_dgias
