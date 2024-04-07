@@ -30,10 +30,14 @@ obj = { timeout: timeout }
 // Load authn-notification.ftlh page and pass obj
 data = RRF "pre-enrollment.ftlh" obj
 When data.continue is ""
+     // Set "obj" with request and timeout data
      obj = { request: qrRequest, timeout: timeout }
+     // Load enrollment.ftlh page and pass "obj"
      data = RRF "enrollment.ftlh" obj
+// Performs validation of the super gluu device
 error = Call sgValidator validateDevice inum
+// If the validation fails, then it is terminated
 When error is not null
      Finish error
-it_qxwku = {success:true, data: { userId: inum }}
-Finish it_qxwku
+it_mvrro = {success:true, data: { userId: inum }}
+Finish it_mvrro
