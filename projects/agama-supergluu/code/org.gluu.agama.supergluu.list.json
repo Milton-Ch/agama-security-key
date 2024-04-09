@@ -3,6 +3,48 @@
 		{
 			"width": 170,
 			"height": 124,
+			"id": "Agama-log-Node-fb642665-8f1b-4476-8479-73ec2983654c",
+			"position": {
+				"x": 228.97188617334393,
+				"y": 30
+			},
+			"type": "log",
+			"data": {
+				"id": "Agama-log-Node-fb642665-8f1b-4476-8479-73ec2983654c",
+				"type": "Agama-log-Node",
+				"parentId": "Agama-start-Flow-85d18b18-b127-4903-bb7a-d78b868f3792",
+				"whenCondition": "WhenFalse",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 228.97188617334393,
+					"y": 30
+				},
+				"agamaData": {
+					"id": "Agama-log-Node-fb642665-8f1b-4476-8479-73ec2983654c",
+					"parentId": "Agama-start-Flow-85d18b18-b127-4903-bb7a-d78b868f3792",
+					"type": "Agama-log-Node",
+					"displayName": "Log startup",
+					"hasComment": true,
+					"comment": "Mark log startup",
+					"whenCondition": "WhenFalse",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"logMessage": "\"List flow started\"",
+					"logLevel": "debug",
+					"nodeIcon": "octicon:log-16"
+				}
+			},
+			"selected": true,
+			"dragging": false,
+			"positionAbsolute": {
+				"x": 228.97188617334393,
+				"y": 30
+			}
+		},
+		{
+			"width": 170,
+			"height": 124,
 			"id": "Agama-start-Flow-85d18b18-b127-4903-bb7a-d78b868f3792",
 			"type": "start",
 			"sourcePosition": "right",
@@ -19,7 +61,7 @@
 					"type": "Agama-start-Flow",
 					"displayName": "ListFlow",
 					"hasComment": true,
-					"comment": "",
+					"comment": "This list flow is responsible for listing or editing the Super Gluu devices that the logged-in user has registered",
 					"isTopLevelFlow": true,
 					"basepath": "",
 					"configParams": "{}",
@@ -35,7 +77,7 @@
 				"x": 28.971886173343933,
 				"y": 30
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 28.971886173343933,
@@ -43,10 +85,28 @@
 			}
 		}
 	],
-	"edges": [],
+	"edges": [
+		{
+			"id": "Agama-start-Flow-85d18b18-b127-4903-bb7a-d78b868f3792-Agama-log-Node-fb642665-8f1b-4476-8479-73ec2983654c-99283a3f-cf69-45a5-a58d-9481dd067639",
+			"type": "default",
+			"source": "Agama-start-Flow-85d18b18-b127-4903-bb7a-d78b868f3792",
+			"target": "Agama-log-Node-fb642665-8f1b-4476-8479-73ec2983654c",
+			"label": "",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#bee0d2",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			}
+		}
+	],
 	"viewport": {
-		"x": 301.04512029456,
-		"y": 82.50260863302572,
-		"zoom": 0.9726549474122862
+		"x": 331.8127133948073,
+		"y": 176.48878127282407,
+		"zoom": 0.8857444960721483
 	}
 }
