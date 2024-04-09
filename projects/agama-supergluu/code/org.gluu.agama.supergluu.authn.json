@@ -93,7 +93,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2834.590912735932,
@@ -254,8 +254,8 @@
 			"height": 124,
 			"id": "Agama-rrf-Node-3b004795-7820-4e2a-9f5a-818cd5948c83",
 			"position": {
-				"x": 2607.0062627168695,
-				"y": 254.8583964426296
+				"x": 2606.033607769457,
+				"y": 252.913086547805
 			},
 			"type": "rrf",
 			"data": {
@@ -266,8 +266,8 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 2607.0062627168695,
-					"y": 254.8583964426296
+					"x": 2606.033607769457,
+					"y": 252.913086547805
 				},
 				"agamaData": {
 					"id": "Agama-rrf-Node-3b004795-7820-4e2a-9f5a-818cd5948c83",
@@ -285,14 +285,15 @@
 					"asssignedVariableName": "data",
 					"arguments": [
 						"obj"
-					]
+					],
+					"nodeColor": "#bee0d2"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
-				"x": 2607.0062627168695,
-				"y": 254.8583964426296
+				"x": 2606.033607769457,
+				"y": 252.913086547805
 			},
 			"dragging": false
 		},
@@ -1379,8 +1380,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1458.5234814414907,
-		"y": 102.33710801988354,
-		"zoom": 0.870550563296124
+		"x": -2077.2375473166535,
+		"y": 91.63703369829886,
+		"zoom": 1.0281138266560663
 	}
 }
