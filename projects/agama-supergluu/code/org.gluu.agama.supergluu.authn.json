@@ -88,11 +88,12 @@
 					"flowfilename": "",
 					"returnVariable": "{ userId: inum }",
 					"finishMode": "withSuccess",
-					"nodeIcon": "material-symbols:line-end-square-rounded"
+					"nodeIcon": "material-symbols:line-end-square-rounded",
+					"displayName": "Successful completion"
 				},
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2834.590912735932,
@@ -135,11 +136,13 @@
 					"flowfilename": "",
 					"returnVariable": "error",
 					"finishMode": "withVariable",
-					"nodeIcon": "material-symbols:line-end-square-rounded"
+					"nodeIcon": "material-symbols:line-end-square-rounded",
+					"displayName": "Finish with error",
+					"nodeColor": "#eb999a"
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 2886.035825204038,
 				"y": 246.93573558873243
@@ -1376,8 +1379,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1967.3795713334748,
-		"y": -13.946738646540325,
-		"zoom": 1.0281138266560683
+		"x": -1458.5234814414907,
+		"y": 102.33710801988354,
+		"zoom": 0.870550563296124
 	}
 }
