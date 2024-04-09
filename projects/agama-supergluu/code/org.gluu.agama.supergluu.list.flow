@@ -1,3 +1,6 @@
+// This list flow is responsible for listing or editing the Super Gluu devices that the logged-in user has registered
 Flow org.gluu.agama.supergluu.list
      Basepath ""
      Inputs userData scimSetting
+// Mark log startup
+Log "@debug List flow started"
