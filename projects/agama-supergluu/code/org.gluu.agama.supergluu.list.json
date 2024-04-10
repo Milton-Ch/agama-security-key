@@ -435,20 +435,7 @@
 					"id": "Agama-when-Node-8a166e47-b297-4604-9b3b-62222b08d6b6",
 					"parentId": "Agama-log-Node-6ef741aa-52bf-486f-8da3-9caae6993159",
 					"type": "Agama-when-Node",
-					"conditions": [
-						{
-							"variable": "listForm.deviceId",
-							"operator": "is not",
-							"dataValue": "null",
-							"combinator": "and"
-						},
-						{
-							"variable": "listForm.deviceId",
-							"operator": "is not",
-							"dataValue": "\"\"",
-							"combinator": "none"
-						}
-					],
+					"conditions": [],
 					"hasComment": true,
 					"inRepeatBlock": ""
 				},
@@ -456,9 +443,9 @@
 					"Agama-when-Node-8a166e47-b297-4604-9b3b-62222b08d6b6.FAILURE",
 					"Agama-when-Node-8a166e47-b297-4604-9b3b-62222b08d6b6.SUCCESS"
 				],
-				"skake": false
+				"skake": true
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 2963.025459138901,
 				"y": 374.4908177849782
@@ -491,13 +478,12 @@
 				},
 				"agamaData": {
 					"id": "Agama-when-Node-eeb1065a-5062-4269-a8c0-b5ccd3276e79",
-					"parentId": "Agama-when-Node-c1aa8b75-6571-4468-b01f-d72eebc91053",
+					"parentId": "Agama-log-Node-6ef741aa-52bf-486f-8da3-9caae6993159",
 					"type": "Agama-when-Node",
 					"hasFailure": true,
 					"conditions": [],
-					"position": {
-						"x": 2039.6539943884716
-					}
+					"hasComment": true,
+					"inRepeatBlock": ""
 				},
 				"handles": [
 					"Agama-when-Node-eeb1065a-5062-4269-a8c0-b5ccd3276e79.FAILURE",
@@ -541,14 +527,7 @@
 					"parentId": "Agama-log-Node-6ef741aa-52bf-486f-8da3-9caae6993159",
 					"type": "Agama-when-Node",
 					"hasFailure": true,
-					"conditions": [
-						{
-							"variable": "listForm.addBtn",
-							"operator": "is",
-							"dataValue": "\"\"",
-							"combinator": "none"
-						}
-					],
+					"conditions": [],
 					"hasComment": true,
 					"inRepeatBlock": false
 				},
@@ -558,7 +537,7 @@
 				],
 				"skake": false
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 1976.2524160580958,
 				"y": 371.6369402065055
@@ -571,7 +550,7 @@
 			"id": "Agama-when-Node-c1aa8b75-6571-4468-b01f-d72eebc91053",
 			"position": {
 				"x": 2216.387083134735,
-				"y": 373.1404693995596
+				"y": 371.1404693995596
 			},
 			"parentId": "Agama-when-Node-0f3d33b5-c336-4108-a7e6-3b6232749cb2",
 			"type": "when",
@@ -584,27 +563,26 @@
 				"inIterateBlock": "",
 				"position": {
 					"x": 2216.387083134735,
-					"y": 373.1404693995596
+					"y": 371.1404693995596
 				},
 				"agamaData": {
 					"id": "Agama-when-Node-c1aa8b75-6571-4468-b01f-d72eebc91053",
-					"parentId": "Agama-when-Node-0f3d33b5-c336-4108-a7e6-3b6232749cb2",
+					"parentId": "Agama-log-Node-6ef741aa-52bf-486f-8da3-9caae6993159",
 					"type": "Agama-when-Node",
 					"hasFailure": true,
 					"conditions": [],
-					"position": {
-						"x": 2039.6539943884716
-					}
+					"hasComment": true,
+					"inRepeatBlock": ""
 				},
 				"handles": [
 					"Agama-when-Node-c1aa8b75-6571-4468-b01f-d72eebc91053.FAILURE",
 					"Agama-when-Node-c1aa8b75-6571-4468-b01f-d72eebc91053.SUCCESS"
 				],
-				"skake": true
+				"skake": false
 			},
 			"positionAbsolute": {
 				"x": 2216.387083134735,
-				"y": 373.1404693995596
+				"y": 371.1404693995596
 			},
 			"whenCondition": "",
 			"inRepeatBlock": "",
@@ -635,22 +613,12 @@
 				},
 				"agamaData": {
 					"id": "Agama-when-Node-9f82e9ea-12ca-4ce0-9093-717dab901f61",
-					"parentId": "Agama-when-Node-eeb1065a-5062-4269-a8c0-b5ccd3276e79",
+					"parentId": "Agama-log-Node-6ef741aa-52bf-486f-8da3-9caae6993159",
 					"type": "Agama-when-Node",
 					"hasFailure": true,
-					"conditions": [
-						{
-							"variable": "listForm.cancelItemBtn",
-							"operator": "is",
-							"dataValue": "\"\"",
-							"combinator": "none"
-						}
-					],
+					"conditions": [],
 					"hasComment": true,
-					"inRepeatBlock": "",
-					"position": {
-						"x": 2578.2202172017223
-					}
+					"inRepeatBlock": ""
 				},
 				"handles": [
 					"Agama-when-Node-9f82e9ea-12ca-4ce0-9093-717dab901f61.FAILURE",
