@@ -3,6 +3,52 @@
 		{
 			"width": 170,
 			"height": 124,
+			"id": "Agama-trigger-Node-a41050a6-655e-48ba-976f-6d03945b7d88",
+			"position": {
+				"x": 2012.3074988432688,
+				"y": 607.4434033610462
+			},
+			"type": "trigger",
+			"data": {
+				"id": "Agama-trigger-Node-a41050a6-655e-48ba-976f-6d03945b7d88",
+				"type": "Agama-trigger-Node",
+				"parentId": "Agama-when-Node-0f3d33b5-c336-4108-a7e6-3b6232749cb2",
+				"whenCondition": "WhenTrue",
+				"inRepeatBlock": false,
+				"inIterateBlock": false,
+				"position": {
+					"x": 2012.3074988432688,
+					"y": 607.4434033610462
+				},
+				"agamaData": {
+					"id": "Agama-trigger-Node-a41050a6-655e-48ba-976f-6d03945b7d88",
+					"parentId": "Agama-when-Node-0f3d33b5-c336-4108-a7e6-3b6232749cb2",
+					"type": "Agama-trigger-Node",
+					"displayName": "",
+					"hasComment": true,
+					"comment": "",
+					"whenCondition": "WhenTrue",
+					"inRepeatBlock": false,
+					"inIterateBlock": false,
+					"nodeIcon": "fluent-mdl2:trigger-approval",
+					"flowFileName": "org.gluu.agama.supergluu.add",
+					"arguments": [
+						"scimFido2Helper"
+					],
+					"asssignedVariableName": "addFlow",
+					"exceptionVariableField": ""
+				}
+			},
+			"selected": false,
+			"positionAbsolute": {
+				"x": 2012.3074988432688,
+				"y": 607.4434033610462
+			},
+			"dragging": false
+		},
+		{
+			"width": 170,
+			"height": 124,
 			"id": "Agama-trigger-Node-e390af63-3f6f-4554-ab8e-3b62ecdc9207",
 			"position": {
 				"x": 2394.788384962733,
@@ -936,8 +982,8 @@
 			"height": 60,
 			"id": "Agama-when-Node-0f3d33b5-c336-4108-a7e6-3b6232749cb2",
 			"position": {
-				"x": 1931.4963043789837,
-				"y": 370.9717613769195
+				"x": 1925.7604833869207,
+				"y": 363.80198513684047
 			},
 			"parentId": "Agama-log-Node-6ef741aa-52bf-486f-8da3-9caae6993159",
 			"type": "when",
@@ -949,8 +995,8 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 1931.4963043789837,
-					"y": 365.9717613769195
+					"x": 1925.7604833869207,
+					"y": 363.80198513684047
 				},
 				"agamaData": {
 					"id": "Agama-when-Node-0f3d33b5-c336-4108-a7e6-3b6232749cb2",
@@ -974,10 +1020,10 @@
 				],
 				"skake": true
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
-				"x": 1931.4963043789837,
-				"y": 370.9717613769195
+				"x": 1925.7604833869207,
+				"y": 363.80198513684047
 			},
 			"dragging": false
 		},
@@ -1440,11 +1486,29 @@
 				"fillOpacity": 0.7
 			},
 			"sourceHandle": "Agama-when-Node-c1aa8b75-6571-4468-b01f-d72eebc91053.SUCCESS"
+		},
+		{
+			"id": "Agama-when-Node-0f3d33b5-c336-4108-a7e6-3b6232749cb2-Agama-trigger-Node-a41050a6-655e-48ba-976f-6d03945b7d88-4603f901-56cf-442c-b1f3-54ecc3e1d0b4",
+			"type": "default",
+			"source": "Agama-when-Node-0f3d33b5-c336-4108-a7e6-3b6232749cb2",
+			"target": "Agama-trigger-Node-a41050a6-655e-48ba-976f-6d03945b7d88",
+			"label": "Condition met",
+			"labelBgPadding": [
+				8,
+				4
+			],
+			"labelBgBorderRadius": 4,
+			"labelBgStyle": {
+				"fill": "#bee0d2",
+				"color": "#ffffff",
+				"fillOpacity": 0.7
+			},
+			"sourceHandle": "Agama-when-Node-0f3d33b5-c336-4108-a7e6-3b6232749cb2.SUCCESS"
 		}
 	],
 	"viewport": {
-		"x": -930.6572770754537,
-		"y": -139.5844395517218,
-		"zoom": 0.6973718331752029
+		"x": -727.7366242042017,
+		"y": -82.1725788758049,
+		"zoom": 0.5
 	}
 }
