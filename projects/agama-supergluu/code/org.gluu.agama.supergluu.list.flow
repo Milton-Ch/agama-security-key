@@ -12,5 +12,3 @@ obj = { fidoDevice: fidoDevice, showError: false, errorTitle: "", errorMessage: 
 Repeat 5 times max
      listForm = RRF "list.ftlh" obj
      Log "@debug List form response %" listForm
-     When 
-When 
