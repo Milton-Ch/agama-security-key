@@ -12,8 +12,5 @@ obj = { fidoDevice: fidoDevice, showError: false, errorTitle: "", errorMessage: 
 Repeat 5 times max
      listForm = RRF "list.ftlh" obj
      Log "@debug List form response %" listForm
-     When listForm.deviceId is not null and listForm.deviceId is not ""
-When listForm.addBtn is ""
+     When 
 When 
-When 
-When listForm.cancelItemBtn is ""
