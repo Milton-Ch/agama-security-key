@@ -24,6 +24,7 @@ Repeat 5 times max
                obj.fidoDevice = Call scimFido2Helper getgetFidoDeviceByUser inum
 When listForm.addBtn is ""
 When 
+     addFlow = Trigger org.gluu.agama.supergluu.add userData scimSetting
 When 
      obj.canEdit = true
      obj.showError = false
