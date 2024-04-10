@@ -4,3 +4,5 @@ Flow org.gluu.agama.supergluu.list
      Inputs userData scimSetting
 // Mark log startup
 Log "@debug List flow started"
+// Set inum = userData.inum
+inum = userData.inum
