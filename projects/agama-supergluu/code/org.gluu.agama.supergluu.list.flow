@@ -22,7 +22,7 @@ Repeat 5 times max
                obj.errorMessage = E.message
           Otherwise
                obj.fidoDevice = Call scimFido2Helper getgetFidoDeviceByUser inum
-When 
+When listForm.addBtn is ""
 When 
 When 
      obj.canEdit = true
