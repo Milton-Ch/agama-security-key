@@ -38,7 +38,8 @@
 					],
 					"asssignedVariableName": "addFlow",
 					"exceptionVariableField": ""
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
@@ -973,7 +974,7 @@
 				],
 				"skake": true
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 1931.4963043789837,
 				"y": 370.9717613769195
@@ -1442,8 +1443,8 @@
 		}
 	],
 	"viewport": {
-		"x": -965.6572770754537,
-		"y": -58.58443955172186,
+		"x": -930.6572770754537,
+		"y": -139.5844395517218,
 		"zoom": 0.6973718331752029
 	}
 }
