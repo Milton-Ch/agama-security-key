@@ -72,7 +72,7 @@
 					"type": "Agama-call-Node",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Call updateDevice",
 					"javaClassName": "",
 					"javaMethodName": "updateDevice",
 					"javaVariableName": "scimFido2Helper",
@@ -124,7 +124,7 @@
 					"type": "Agama-assignment-Node",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Hide canEdit and error",
 					"whenCondition": "WhenTrue",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
@@ -177,7 +177,7 @@
 					"type": "Agama-assignment-Node",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Hide canEdit and error",
 					"whenCondition": "WhenTrue",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
@@ -210,7 +210,7 @@
 			"id": "Agama-call-Node-e736c5f7-3abf-4d0a-ba6d-f50c620ce221",
 			"position": {
 				"x": 3420.863359350216,
-				"y": 870.5200239027458
+				"y": 869.4919100760897
 			},
 			"type": "call",
 			"data": {
@@ -222,7 +222,7 @@
 				"inIterateBlock": false,
 				"position": {
 					"x": 3420.863359350216,
-					"y": 870.5200239027458
+					"y": 869.4919100760897
 				},
 				"agamaData": {
 					"id": "Agama-call-Node-e736c5f7-3abf-4d0a-ba6d-f50c620ce221",
@@ -230,7 +230,7 @@
 					"type": "Agama-call-Node",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Load all super gluu device by user",
 					"javaClassName": "",
 					"javaMethodName": "getFidoDeviceByUser",
 					"javaVariableName": "scimFido2Helper",
@@ -250,7 +250,7 @@
 			"selected": false,
 			"positionAbsolute": {
 				"x": 3420.863359350216,
-				"y": 870.5200239027458
+				"y": 869.4919100760897
 			},
 			"dragging": false
 		},
@@ -308,7 +308,7 @@
 			"height": 124,
 			"id": "Agama-log-Node-a5593fa5-f0ba-41aa-a5d2-df4cd6c678d0",
 			"position": {
-				"x": 2968.0466624258565,
+				"x": 2967.0185485992006,
 				"y": 713.2151340862252
 			},
 			"type": "log",
@@ -320,7 +320,7 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 2968.0466624258565,
+					"x": 2967.0185485992006,
 					"y": 713.2151340862252
 				},
 				"agamaData": {
@@ -329,7 +329,7 @@
 					"type": "Agama-log-Node",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Print log with enrollment flow values",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
@@ -341,7 +341,7 @@
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 2968.0466624258565,
+				"x": 2967.0185485992006,
 				"y": 713.2151340862252
 			},
 			"dragging": false
@@ -372,7 +372,7 @@
 					"type": "Agama-trigger-Node",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "",
+					"comment": "This flow handles the registration of a new super gluu device",
 					"whenCondition": "WhenTrue",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
@@ -420,12 +420,12 @@
 					"type": "Agama-trigger-Node",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "",
+					"comment": "This flow is responsible for performing the validation of the super gluu device during authentication",
 					"whenCondition": "WhenTrue",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
 					"nodeIcon": "fluent-mdl2:trigger-approval",
-					"flowFileName": "org.gluu.agama.supergluu.add",
+					"flowFileName": "org.gluu.agama.supergluu.authn",
 					"arguments": [
 						"userData",
 						"scimSetting"
@@ -448,7 +448,7 @@
 			"id": "Agama-assignment-Node-668a3c0c-ad2f-4915-a77c-baab7d7e587d",
 			"position": {
 				"x": 3248.494205306689,
-				"y": 534.0650711131951
+				"y": 533.0369572865391
 			},
 			"type": "assignment",
 			"data": {
@@ -460,7 +460,7 @@
 				"inIterateBlock": false,
 				"position": {
 					"x": 3248.494205306689,
-					"y": 534.0650711131951
+					"y": 533.0369572865391
 				},
 				"agamaData": {
 					"id": "Agama-assignment-Node-668a3c0c-ad2f-4915-a77c-baab7d7e587d",
@@ -468,7 +468,7 @@
 					"type": "Agama-assignment-Node",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Show canEdit and hide error",
 					"whenCondition": "WhenTrue",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
@@ -491,7 +491,7 @@
 			"selected": false,
 			"positionAbsolute": {
 				"x": 3248.494205306689,
-				"y": 534.0650711131951
+				"y": 533.0369572865391
 			},
 			"dragging": false
 		},
@@ -521,7 +521,7 @@
 					"type": "Agama-log-Node",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Print listForm with values",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
@@ -562,9 +562,9 @@
 					"id": "Agama-rrf-Node-ae7148a6-0c4f-4733-8b85-7787b22d2e9e",
 					"parentId": "Agama-repeat-Node-1adcfc2a-af1e-4f34-bf89-e6ee16b0b91f",
 					"type": "Agama-rrf-Node",
-					"displayName": "",
+					"displayName": "Render list form",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Load list.ftlh page and pass obj",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": true,
 					"inIterateBlock": false,
@@ -572,7 +572,9 @@
 					"nodeIcon": "ph:globe-simple",
 					"templatePath": "list.ftlh",
 					"asssignedVariableName": "listForm",
-					"arguments": "obj"
+					"arguments": [
+						"obj"
+					]
 				},
 				"skake": false
 			},
@@ -589,7 +591,7 @@
 			"id": "Agama-repeat-Node-1adcfc2a-af1e-4f34-bf89-e6ee16b0b91f",
 			"position": {
 				"x": 1228.101335610048,
-				"y": 29.176408982732426
+				"y": 26.74801921394237
 			},
 			"type": "repeat",
 			"data": {
@@ -605,7 +607,7 @@
 				],
 				"position": {
 					"x": 1228.101335610048,
-					"y": 29.176408982732426
+					"y": 26.74801921394237
 				},
 				"agamaData": {
 					"id": "Agama-repeat-Node-1adcfc2a-af1e-4f34-bf89-e6ee16b0b91f",
@@ -613,14 +615,15 @@
 					"type": "Agama-repeat-Node",
 					"nodeIcon": "material-symbols:event-repeat-outline-rounded",
 					"maxIteration": "5",
-					"hasComment": true
+					"hasComment": true,
+					"comment": "Repeat max 5 times"
 				},
 				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
 				"x": 1228.101335610048,
-				"y": 29.176408982732426
+				"y": 26.74801921394237
 			},
 			"dragging": false
 		},
@@ -650,7 +653,7 @@
 					"type": "Agama-assignment-Node",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Var obj declaration",
 					"whenCondition": "WhenFalse",
 					"inRepeatBlock": false,
 					"inIterateBlock": false,
@@ -678,7 +681,7 @@
 			"id": "Agama-call-Node-febc0f4f-7b68-432d-af04-0fe0d5e58ba9",
 			"position": {
 				"x": 828.1013356100478,
-				"y": 30
+				"y": 28.785805115604944
 			},
 			"type": "call",
 			"data": {
@@ -690,7 +693,7 @@
 				"inIterateBlock": false,
 				"position": {
 					"x": 828.1013356100478,
-					"y": 30
+					"y": 28.785805115604944
 				},
 				"agamaData": {
 					"id": "Agama-call-Node-febc0f4f-7b68-432d-af04-0fe0d5e58ba9",
@@ -698,7 +701,7 @@
 					"type": "Agama-call-Node",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Get super gluu devices by user",
 					"javaClassName": "",
 					"javaMethodName": "getFidoDeviceByUser",
 					"javaVariableName": "scimFido2Helper",
@@ -719,7 +722,7 @@
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 828.1013356100478,
-				"y": 30
+				"y": 28.785805115604944
 			}
 		},
 		{
@@ -727,7 +730,7 @@
 			"height": 124,
 			"id": "Agama-call-Node-1e8189f6-82a6-40a5-888d-f46b63c840fe",
 			"position": {
-				"x": 628.1013356100478,
+				"x": 626.7680022767146,
 				"y": 30
 			},
 			"type": "call",
@@ -739,7 +742,7 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 628.1013356100478,
+					"x": 626.7680022767146,
 					"y": 30
 				},
 				"agamaData": {
@@ -748,7 +751,7 @@
 					"type": "Agama-call-Node",
 					"displayName": "",
 					"hasComment": true,
-					"comment": "",
+					"comment": "Get instance ScimFido2Helper",
 					"javaClassName": "org.gluu.agama.supergluu.ScimFido2Helper",
 					"javaMethodName": "",
 					"javaVariableName": "",
@@ -768,7 +771,7 @@
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 628.1013356100478,
+				"x": 626.7680022767146,
 				"y": 30
 			}
 		},
@@ -967,7 +970,7 @@
 			"id": "Agama-when-Node-fe13c90e-f0ab-43e7-9082-d80025992b32",
 			"position": {
 				"x": 2702.657303183581,
-				"y": 369.86240040960604
+				"y": 368.83428658294997
 			},
 			"parentId": "Agama-when-Node-90a23f71-969f-4492-8ee6-c80703303c2e",
 			"type": "when",
@@ -980,7 +983,7 @@
 				"inIterateBlock": "",
 				"position": {
 					"x": 2702.657303183581,
-					"y": 369.86240040960604
+					"y": 368.83428658294997
 				},
 				"agamaData": {
 					"id": "Agama-when-Node-fe13c90e-f0ab-43e7-9082-d80025992b32",
@@ -1011,7 +1014,7 @@
 			"dragging": false,
 			"positionAbsolute": {
 				"x": 2702.657303183581,
-				"y": 369.86240040960604
+				"y": 368.83428658294997
 			},
 			"whenCondition": "",
 			"inRepeatBlock": "",
@@ -1562,8 +1565,8 @@
 		}
 	],
 	"viewport": {
-		"x": -812.3974038381523,
-		"y": -40.76979397776802,
-		"zoom": 0.5
+		"x": -1811.590423620416,
+		"y": -118.73809976650682,
+		"zoom": 0.9726549474122862
 	}
 }
