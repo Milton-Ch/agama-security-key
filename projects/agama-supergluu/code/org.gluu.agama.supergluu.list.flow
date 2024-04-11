@@ -6,28 +6,42 @@ Flow org.gluu.agama.supergluu.list
 Log "@debug List flow started"
 // Set inum = userData.inum
 inum = userData.inum
+// Get instance ScimFido2Helper
 scimFido2Helper = Call org.gluu.agama.supergluu.ScimFido2Helper#new scimSetting
+// Get super gluu devices by user
 fidoDevice = Call scimFido2Helper getFidoDeviceByUser inum
+// Var obj declaration
 obj = { fidoDevice: fidoDevice, showError: false, errorTitle: "", errorMessage: "", canEdit: false }
+// Repeat max 5 times
 Repeat 5 times max
+     // Load list.ftlh page and pass obj
      listForm = RRF "list.ftlh" obj
+     // Print listForm with values
      Log "@debug List form response %" listForm
      When listForm.deviceId is not null and listForm.deviceId is not ""
+          // Hide canEdit and error
           obj.canEdit = false
           obj.showError = false
+          // Call updateDevice
           nickNamed | E = Call scimFido2Helper updateDevice inum listForm.deviceId listForm.nickname
      When listForm.cancelItemBtn is ""
+          // Hide canEdit and error
           obj.canEdit = false
           obj.showError = false
      When listForm.addBtn is ""
+          // This flow handles the registration of a new super gluu device
           addFlow = Trigger org.gluu.agama.supergluu.add userData scimSetting
+          // Print log with enrollment flow values
           Log "@debug Enrollment flow response %" addFlow
           When addFlow.success is true
+               // Load all super gluu device by user
                obj.fidoDevice = Call scimFido2Helper getFidoDeviceByUser inum
      When listForm.loginBtn is ""
-          authFlow = Trigger org.gluu.agama.supergluu.add userData scimSetting
+          // This flow is responsible for performing the validation of the super gluu device during authentication
+          authFlow = Trigger org.gluu.agama.supergluu.authn userData scimSetting
      When listForm.editItemBtn is ""
+          // Show canEdit and hide error
           obj.canEdit = true
           obj.showError = false
-it_uvhts = {success:false, error: "Super gluu list limited excedeed"}
-Finish it_uvhts
+it_iugrk = {success:false, error: "Super gluu list limited excedeed"}
+Finish it_iugrk
