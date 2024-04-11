@@ -12,6 +12,9 @@ obj = { fidoDevice: fidoDevice, showError: false, errorTitle: "", errorMessage: 
 Repeat 5 times max
      listForm = RRF "list.ftlh" obj
      Log "@debug List form response %" listForm
+     When listForm.cancelItemBtn is ""
+          obj.canEdit = false
+          obj.showError = false
      When listForm.addBtn is ""
           addFlow = Trigger org.gluu.agama.supergluu.add userData scimSetting
           Log "@debug Enrollment flow response %" addFlow
