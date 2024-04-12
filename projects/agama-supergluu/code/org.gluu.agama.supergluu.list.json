@@ -5,8 +5,8 @@
 			"height": 124,
 			"id": "finish-edb55af9-754f-46f0-807c-3f7867eaf587",
 			"position": {
-				"x": 1615.3642010014025,
-				"y": 26.124947417314615
+				"x": 1616.336855948815,
+				"y": 27.097602364726924
 			},
 			"type": "finish",
 			"data": {
@@ -21,8 +21,8 @@
 					"Agama-repeat-Node-1adcfc2a-af1e-4f34-bf89-e6ee16b0b91f.InRepeatBlock"
 				],
 				"position": {
-					"x": 1615.3642010014025,
-					"y": 26.124947417314615
+					"x": 1616.336855948815,
+					"y": 27.097602364726924
 				},
 				"agamaData": {
 					"id": "finish-edb55af9-754f-46f0-807c-3f7867eaf587",
@@ -31,18 +31,20 @@
 					"hasSuccess": false,
 					"hasFailure": false,
 					"hasComment": true,
-					"comment": "",
+					"comment": "End with error due to exceeded attempt limit.",
 					"flowfilename": "",
 					"returnVariable": "Super gluu list limited excedeed",
 					"finishMode": "withFailure",
-					"nodeIcon": "material-symbols:line-end-square-rounded"
+					"nodeIcon": "material-symbols:line-end-square-rounded",
+					"displayName": "Limited excedeed",
+					"nodeColor": "#eb999a"
 				},
 				"skake": false
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 1615.3642010014025,
-				"y": 26.124947417314615
+				"x": 1616.336855948815,
+				"y": 27.097602364726924
 			},
 			"dragging": false
 		},
@@ -51,8 +53,8 @@
 			"height": 124,
 			"id": "Agama-call-Node-ce04c2d3-6088-41d9-970f-5b6090a0e4da",
 			"position": {
-				"x": 2627.6525509014423,
-				"y": 723.1410616123504
+				"x": 2618.8986563747317,
+				"y": 719.2504418227013
 			},
 			"type": "call",
 			"data": {
@@ -63,14 +65,14 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 2627.6525509014423,
-					"y": 723.1410616123504
+					"x": 2618.8986563747317,
+					"y": 719.2504418227013
 				},
 				"agamaData": {
 					"id": "Agama-call-Node-ce04c2d3-6088-41d9-970f-5b6090a0e4da",
 					"parentId": "Agama-assignment-Node-256b21a3-c4c2-4f1e-88f0-889727c0075c",
 					"type": "Agama-call-Node",
-					"displayName": "",
+					"displayName": "Update nickname",
 					"hasComment": true,
 					"comment": "Call updateDevice",
 					"javaClassName": "",
@@ -93,8 +95,8 @@
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 2627.6525509014423,
-				"y": 723.1410616123504
+				"x": 2618.8986563747317,
+				"y": 719.2504418227013
 			},
 			"dragging": false
 		},
@@ -104,7 +106,7 @@
 			"id": "Agama-assignment-Node-256b21a3-c4c2-4f1e-88f0-889727c0075c",
 			"position": {
 				"x": 2316.0364556034574,
-				"y": 718.1147172780518
+				"y": 717.1420623306394
 			},
 			"type": "assignment",
 			"data": {
@@ -116,7 +118,7 @@
 				"inIterateBlock": false,
 				"position": {
 					"x": 2316.0364556034574,
-					"y": 718.1147172780518
+					"y": 717.1420623306394
 				},
 				"agamaData": {
 					"id": "Agama-assignment-Node-256b21a3-c4c2-4f1e-88f0-889727c0075c",
@@ -147,7 +149,7 @@
 			"selected": false,
 			"positionAbsolute": {
 				"x": 2316.0364556034574,
-				"y": 718.1147172780518
+				"y": 717.1420623306394
 			},
 			"dragging": false
 		},
@@ -157,7 +159,7 @@
 			"id": "Agama-assignment-Node-a7246820-1317-459b-8f60-870728e159e6",
 			"position": {
 				"x": 2318.9320889855935,
-				"y": 552.3542349306447
+				"y": 551.3815799832324
 			},
 			"type": "assignment",
 			"data": {
@@ -169,7 +171,7 @@
 				"inIterateBlock": false,
 				"position": {
 					"x": 2318.9320889855935,
-					"y": 552.3542349306447
+					"y": 551.3815799832324
 				},
 				"agamaData": {
 					"id": "Agama-assignment-Node-a7246820-1317-459b-8f60-870728e159e6",
@@ -200,7 +202,7 @@
 			"selected": false,
 			"positionAbsolute": {
 				"x": 2318.9320889855935,
-				"y": 552.3542349306447
+				"y": 551.3815799832324
 			},
 			"dragging": false
 		},
@@ -228,7 +230,7 @@
 					"id": "Agama-call-Node-e736c5f7-3abf-4d0a-ba6d-f50c620ce221",
 					"parentId": "Agama-when-Node-0240b35e-7ac3-4486-8869-18a92edf6350",
 					"type": "Agama-call-Node",
-					"displayName": "",
+					"displayName": "Load devices",
 					"hasComment": true,
 					"comment": "Load all super gluu device by user",
 					"javaClassName": "",
@@ -383,7 +385,8 @@
 						"scimSetting"
 					],
 					"asssignedVariableName": "addFlow",
-					"exceptionVariableField": ""
+					"exceptionVariableField": "",
+					"nodeColor": "#80deea"
 				},
 				"skake": false
 			},
@@ -418,7 +421,7 @@
 					"id": "Agama-trigger-Node-24bb3d91-e2ca-41b7-8209-702e5f7626a0",
 					"parentId": "Agama-when-Node-fe13c90e-f0ab-43e7-9082-d80025992b32",
 					"type": "Agama-trigger-Node",
-					"displayName": "",
+					"displayName": "Authentication flow",
 					"hasComment": true,
 					"comment": "This flow is responsible for performing the validation of the super gluu device during authentication",
 					"whenCondition": "WhenTrue",
@@ -431,7 +434,8 @@
 						"scimSetting"
 					],
 					"asssignedVariableName": "authFlow",
-					"exceptionVariableField": ""
+					"exceptionVariableField": "",
+					"nodeColor": "#80deea"
 				},
 				"skake": false
 			},
@@ -699,7 +703,7 @@
 					"id": "Agama-call-Node-febc0f4f-7b68-432d-af04-0fe0d5e58ba9",
 					"parentId": "Agama-call-Node-1e8189f6-82a6-40a5-888d-f46b63c840fe",
 					"type": "Agama-call-Node",
-					"displayName": "",
+					"displayName": "List super gluu devices",
 					"hasComment": true,
 					"comment": "Get super gluu devices by user",
 					"javaClassName": "",
@@ -730,8 +734,8 @@
 			"height": 124,
 			"id": "Agama-call-Node-1e8189f6-82a6-40a5-888d-f46b63c840fe",
 			"position": {
-				"x": 626.7680022767146,
-				"y": 30
+				"x": 625.7953473293024,
+				"y": 29.02734505258769
 			},
 			"type": "call",
 			"data": {
@@ -742,14 +746,14 @@
 				"inRepeatBlock": false,
 				"inIterateBlock": false,
 				"position": {
-					"x": 626.7680022767146,
-					"y": 30
+					"x": 625.7953473293024,
+					"y": 29.02734505258769
 				},
 				"agamaData": {
 					"id": "Agama-call-Node-1e8189f6-82a6-40a5-888d-f46b63c840fe",
 					"parentId": "Agama-assignment-Node-8ff5f251-b3eb-469e-854e-1fb0b24587d4",
 					"type": "Agama-call-Node",
-					"displayName": "",
+					"displayName": "ScimFido2Helper instance",
 					"hasComment": true,
 					"comment": "Get instance ScimFido2Helper",
 					"javaClassName": "org.gluu.agama.supergluu.ScimFido2Helper",
@@ -771,8 +775,8 @@
 			"selected": false,
 			"dragging": false,
 			"positionAbsolute": {
-				"x": 626.7680022767146,
-				"y": 30
+				"x": 625.7953473293024,
+				"y": 29.02734505258769
 			}
 		},
 		{
@@ -1565,8 +1569,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1811.590423620416,
-		"y": -118.73809976650682,
-		"zoom": 0.9726549474122862
+		"x": -2585.756234309589,
+		"y": -211.77416002568543,
+		"zoom": 1.0281138266560677
 	}
 }
