@@ -70,11 +70,7 @@
         "configs": {
             "org.gluu.agama.supergluu.add": {},
             "org.gluu.agama.supergluu.authn": {},
-            "org.gluu.agama.supergluu.main": {
-                "scimClientId": "YOUR_SCIM_ID",
-                "scimClientSecret": "YOUR_SCIM_SECRET",
-                "maxLoginAttempt": 3
-            },
+            "org.gluu.agama.supergluu.main": {},
             "org.gluu.agama.supergluu.list": {}
         },
         "name": "agama-supergluu"
