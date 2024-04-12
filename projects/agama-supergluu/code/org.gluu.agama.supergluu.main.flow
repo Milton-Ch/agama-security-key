@@ -32,3 +32,6 @@ Repeat 5 times max
                obj.showError = true
                obj.errorTitle = "Invalid credentials"
                obj.errorMessage = "Wrong user name or password"
+// Limited exceeded
+it_hocbg = {success:false, error: "Login attempt exceeded"}
+Finish it_hocbg
