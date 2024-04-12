@@ -43,5 +43,6 @@ Repeat 5 times max
           // Show canEdit and hide error
           obj.canEdit = true
           obj.showError = false
-it_iugrk = {success:false, error: "Super gluu list limited excedeed"}
-Finish it_iugrk
+// End with error due to exceeded attempt limit.
+it_efmnn = {success:false, error: "Super gluu list limited excedeed"}
+Finish it_efmnn
