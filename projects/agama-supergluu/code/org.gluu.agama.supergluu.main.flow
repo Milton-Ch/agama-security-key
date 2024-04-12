@@ -1,2 +1,23 @@
 Flow org.gluu.agama.supergluu.main
      Basepath ""
+     Configs conf
+Log "@debug Main flow started"
+// Get instance AuthenticationService
+authService = Call io.jans.as.server.service.AuthenticationService#class 
+// Get instance CdiUtil
+cdiUtil = Call io.jans.service.cdi.util.CdiUtil#bean authService
+// Initialize authResult and obj
+authResult = {}
+obj = { success: true, showError: false, errorTitle: "", errorMessage: "" }
+Repeat 5 times max
+     // Load main.ftlh page and pass obj
+     mainForm = RRF "main.ftlh" obj
+     Log "@debug Main form response %" mainForm
+     // Call authentication method with credentials
+     authResult.success = Call cdiUtil authenticate mainForm.username mainForm.password
+     // Set authResult.uid = mainForm.username
+     authResult.uid = mainForm.username
+     When authResult.success is true
+          // Get userData by uid
+          userData = Call org.gluu.agama.supergluu.IdentityProcessor#accountFromUid authResult.uid
+          listFlow = Trigger org.gluu.agama.supergluu.list userData
