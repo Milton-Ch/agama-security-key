@@ -20,4 +20,15 @@ Repeat 5 times max
      When authResult.success is true
           // Get userData by uid
           userData = Call org.gluu.agama.supergluu.IdentityProcessor#accountFromUid authResult.uid
-          listFlow = Trigger org.gluu.agama.supergluu.list userData
+          // This flow is responsible for listing, editing, and authenticating
+          listFlow = Trigger org.gluu.agama.supergluu.list conf
+          // Print response of listFlow
+          Log "@debug List flow completed %" listFlow
+          When authResult.success is true
+               // Return uid
+               Finish authResult.uid
+          Otherwise
+               // Show error with invalid credentials
+               obj.showError = true
+               obj.errorTitle = "Invalid credentials"
+               obj.errorMessage = "Wrong user name or password"
