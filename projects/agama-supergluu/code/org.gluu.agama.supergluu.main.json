@@ -38,7 +38,8 @@
 					"nodeIcon": "material-symbols:line-end-square-rounded",
 					"displayName": "Finish with error",
 					"nodeColor": "#eb999a"
-				}
+				},
+				"skake": false
 			},
 			"selected": false,
 			"dragging": false,
@@ -1151,8 +1152,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1025.3352609992853,
-		"y": -84.87234577789536,
+		"x": -748.3352609992858,
+		"y": 21.127654222104624,
 		"zoom": 0.5730866776734739
 	}
 }
