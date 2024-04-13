@@ -1,6 +1,8 @@
+// This flow is the main flow, which manages the other flows.
 Flow org.gluu.agama.supergluu.main
      Basepath ""
      Configs conf
+// Mark startup logs
 Log "@debug Main flow started"
 // Get instance AuthenticationService
 authService = Call io.jans.as.server.service.AuthenticationService#class 
@@ -18,10 +20,11 @@ Repeat 5 times max
      // Set authResult.uid = mainForm.username
      authResult.uid = mainForm.username
      When authResult.success is true
+          globalConfig = conf
           // Get userData by uid
           userData = Call org.gluu.agama.supergluu.IdentityProcessor#accountFromUid authResult.uid
           // This flow is responsible for listing, editing, and authenticating
-          listFlow = Trigger org.gluu.agama.supergluu.list conf
+          listFlow = Trigger org.gluu.agama.supergluu.list userData globalConfig
           // Print response of listFlow
           Log "@debug List flow completed %" listFlow
           When authResult.success is true
@@ -33,5 +36,5 @@ Repeat 5 times max
                obj.errorTitle = "Invalid credentials"
                obj.errorMessage = "Wrong user name or password"
 // Limited exceeded
-it_xenfi = {success:false, error: "Login attempt exceeded"}
-Finish it_xenfi
+it_kofgi = {success:false, error: "Login attempt exceeded"}
+Finish it_kofgi
