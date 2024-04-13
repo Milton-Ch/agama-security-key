@@ -36,5 +36,5 @@ Repeat 5 times max
                obj.errorTitle = "Invalid credentials"
                obj.errorMessage = "Wrong user name or password"
 // Limited exceeded
-it_kofgi = {success:false, error: "Login attempt exceeded"}
-Finish it_kofgi
+it_znhsf = {success:false, error: "Login attempt exceeded"}
+Finish it_znhsf
