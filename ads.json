@@ -74,11 +74,7 @@
             "org.gluu.agama.supergluu.authn": {
                 "timeout": 80
             },
-            "org.gluu.agama.supergluu.main": {
-                "scimClientId": "YOUR_SCIM_ID",
-                "scimClientSecret": "YOUR_SCIM_SECRET",
-                "maxLoginAttempt": 3
-            }
+            "org.gluu.agama.supergluu.main": {}
         },
         "name": "agama-supergluu"
     }
