@@ -849,9 +849,10 @@
 						}
 					],
 					"nodeIcon": "material-symbols:equal"
-				}
+				},
+				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 2388.3588427578493,
 				"y": 445.9402051529885
@@ -863,8 +864,8 @@
 			"height": 124,
 			"id": "Agama-call-Node-637e4dbb-e954-4107-9902-cfcc286a362f",
 			"position": {
-				"x": 2654.4015107084456,
-				"y": 446.33234674242476
+				"x": 2663.4334607069795,
+				"y": 449.71932799187493
 			},
 			"type": "call",
 			"data": {
@@ -875,8 +876,8 @@
 				"inRepeatBlock": "",
 				"inIterateBlock": "",
 				"position": {
-					"x": 2654.4015107084456,
-					"y": 446.33234674242476
+					"x": 2663.4334607069795,
+					"y": 449.71932799187493
 				},
 				"agamaData": {
 					"id": "Agama-call-Node-637e4dbb-e954-4107-9902-cfcc286a362f",
@@ -906,8 +907,8 @@
 			},
 			"selected": false,
 			"positionAbsolute": {
-				"x": 2654.4015107084456,
-				"y": 446.33234674242476
+				"x": 2663.4334607069795,
+				"y": 449.71932799187493
 			},
 			"dragging": false,
 			"parentId": "Agama-assignment-Node-cb30de36-bc38-4659-a3fa-cd9ef58bb7ba",
@@ -1214,12 +1215,13 @@
 				"fill": "#bee0d2",
 				"color": "#ffffff",
 				"fillOpacity": 0.7
-			}
+			},
+			"selected": true
 		}
 	],
 	"viewport": {
-		"x": -1851.766013878655,
-		"y": -14.129489915105523,
+		"x": -1887.766013878655,
+		"y": -232.12948991510552,
 		"zoom": 0.8857444960721486
 	}
 }
