@@ -1,7 +1,7 @@
 // This flow is responsible for setting a nickname for the super gluu device that completes the enrollment
 Flow org.gluu.agama.supergluu.nickname
      Basepath ""
-     Configs deviceId userData scimSetting
+     Inputs deviceId userData scimSetting
 // Mark startup logs
 Log "@debug Nickname flow started"
 // inum and name declaration variable
@@ -17,8 +17,8 @@ sgEnroller = Call org.gluu.agama.supergluu.SGValidator#new
 attached = Call sgEnroller attach inum deviceId nicknameForm.nickname
 When attached is false
      // Ends with an error if the user failed to associate the super gluu device
-     it_erbpu = {success:false, error: "Enrolled device couldn't be attached to user profile"}
-     Finish it_erbpu
+     it_vcqwj = {success:false, error: "Enrolled device couldn't be attached to user profile"}
+     Finish it_vcqwj
 // Nickname saved correctly
-it_besbo = {success:true, data: { userId: inum, message: "Nickname saved correctly"}}
-Finish it_besbo
+it_jzjsu = {success:true, data: { userId: inum, message: "Nickname saved correctly"}}
+Finish it_jzjsu
