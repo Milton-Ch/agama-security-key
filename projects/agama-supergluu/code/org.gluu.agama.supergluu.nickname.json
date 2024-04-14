@@ -19,7 +19,7 @@
 				},
 				"skake": false
 			},
-			"selected": true,
+			"selected": false,
 			"positionAbsolute": {
 				"x": 1396.5032391518134,
 				"y": -29.564262646496275
@@ -366,8 +366,8 @@
 			"dragging": false
 		},
 		{
-			"width": 168,
-			"height": 120,
+			"width": 170,
+			"height": 124,
 			"id": "Agama-start-Flow-fffb2ed3-269e-4150-9e61-932fca84daf1",
 			"type": "start",
 			"sourcePosition": "right",
@@ -390,17 +390,17 @@
 					"configParams": "{}",
 					"nodeIcon": "material-symbols:line-start-square",
 					"timeout": "",
-					"inputs": "",
-					"configs": "deviceId userData scimSetting",
+					"inputs": "deviceId userData scimSetting",
+					"configs": "",
 					"flowname": "org.gluu.agama.supergluu.nickname"
 				},
-				"skake": true
+				"skake": false
 			},
 			"position": {
 				"x": 30,
 				"y": 28.5
 			},
-			"selected": false,
+			"selected": true,
 			"positionAbsolute": {
 				"x": 30,
 				"y": 28.5
@@ -680,8 +680,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1224.812340802142,
-		"y": 109.69165025670975,
-		"zoom": 1.2141948843950479
+		"x": 126,
+		"y": 254,
+		"zoom": 0.75
 	}
 }
